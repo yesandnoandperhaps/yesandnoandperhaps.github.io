@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yesandnoandperhaps.github.io/2024/07/08/s/s31/</loc>
+    
+    <lastmod>2024-07-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yesandnoandperhaps.github.io/about/index.html</loc>
     
     <lastmod>2024-07-08</lastmod>
@@ -754,6 +763,13 @@
   </url>
   
   <url>
+    <loc>https://yesandnoandperhaps.github.io/tags/gif/</loc>
+    <lastmod>2024-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://yesandnoandperhaps.github.io/tags/%E6%96%87%E5%AD%A6%E5%B8%B8%E8%AF%86/</loc>
     <lastmod>2024-07-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -762,13 +778,6 @@
   
   <url>
     <loc>https://yesandnoandperhaps.github.io/tags/%E5%AF%B9%E8%81%94%E9%9B%86/</loc>
-    <lastmod>2024-07-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yesandnoandperhaps.github.io/tags/gif/</loc>
     <lastmod>2024-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
