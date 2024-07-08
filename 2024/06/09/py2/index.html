@@ -1,0 +1,1052 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/aa.png">
+  <link rel="icon" href="/img/aa.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="林秋云">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="没啥用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python内置函数">
+<meta property="og:url" content="https://yesandnoandperhaps.github.io/2024/06/09/py2/index.html">
+<meta property="og:site_name" content="yesandnoandperhaps">
+<meta property="og:description" content="没啥用">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-06-09T08:00:00.000Z">
+<meta property="article:modified_time" content="2024-06-24T12:20:52.750Z">
+<meta property="article:author" content="yesandnoandperhaps">
+<meta property="article:tag" content="备忘录">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>Python内置函数 - yesandnoandperhaps</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/macpanel.css">
+<link rel="stylesheet" href="/css/fonts.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"yesandnoandperhaps.github.io","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":"be339a7401c0fba4ed0e2f4d0dc39e18","google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":false};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+    <!-- Baidu Analytics -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?be339a7401c0fba4ed0e2f4d0dc39e18";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      }
+    </script>
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>yesandnoandperhaps</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/contribute/" target="_self">
+                <i class="iconfont icon-clipcheck"></i>
+                <span>投稿</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-users"></i>
+                <span>创作者</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/py.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.25)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Python内置函数"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-06-09 16:00" pubdate>
+          2024年6月9日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          9 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">Python内置函数</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="内置函数">内置函数</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">–</th>
+<th style="text-align:center">–</th>
+<th style="text-align:center"></th>
+<th style="text-align:center">–</th>
+<th style="text-align:center">–</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/func-number-abs.html">abs()</a></td>
+<td style="text-align:center">返回绝对值</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-divmod.html">divmod()</a></td>
+<td style="text-align:center">将除数和余数结合成一个元组</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-input.html">input()</a></td>
+<td style="text-align:center">输入数据后返回string类型</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-open.html">open()</a></td>
+<td style="text-align:center">打开文件</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-staticmethod.html">staticmethod()</a></td>
+<td style="text-align:center">返回函数的静态方法</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-all.html">all()</a></td>
+<td style="text-align:center">判断给定的可迭代参数iterable中所有元素是否存在0、空、None、False；若有返回False，反之返回True</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-enumerate.html">enumerate()</a></td>
+<td style="text-align:center">将一个可迭代对象组合为一个索引序列，返回结果为一个元组，包含索引和对应的元素</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-int.html">int()</a></td>
+<td style="text-align:center">转换字符串或数字为整型</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-ord.html">ord()</a></td>
+<td style="text-align:center">返回一个字符的Unicode码点</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-str.html">str()</a></td>
+<td style="text-align:center">字符串</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-any.html">any()</a></td>
+<td style="text-align:center">判断给定的可迭代参数iterable中所有元素是否全为0、空、None、False；若是返回False，反之返回True</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-eval.html">eval()</a></td>
+<td style="text-align:center">执行一个字符串表达式，并返回表达式的值</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-isinstance.html">isinstance()</a></td>
+<td style="text-align:center">判断对象类型</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/func-number-pow.html">pow()</a></td>
+<td style="text-align:center">计算数的次方的值</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-sum.html">sum()</a></td>
+<td style="text-align:center">对序列求和</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-execfile.html">execfile()</a></td>
+<td style="text-align:center">执行一个文件</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-issubclass.html">issubclass()</a></td>
+<td style="text-align:center">判断class是否是类型参数classinfo的子类</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-print.html">print()</a></td>
+<td style="text-align:center">打印输出</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-super.html">super()</a></td>
+<td style="text-align:center">调用父类的一个方法</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-bin.html">bin()</a></td>
+<td style="text-align:center">返回一个int或long int的二进制表示。</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-iter.html">iter()</a></td>
+<td style="text-align:center">生成迭代器</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-property.html">property()</a></td>
+<td style="text-align:center">获取属性值，设置属性值，删除属性，属性文档字符串</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/att-tuple-tuple.html">tuple()</a></td>
+<td style="text-align:center">将列表转换为元组</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-bool.html">bool()</a></td>
+<td style="text-align:center">将给定参数转换为布尔类型，若无参数，返回 False</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-filter.html">filter()</a></td>
+<td style="text-align:center">过滤序列，返回新列表</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/att-string-len.html">len()</a></td>
+<td style="text-align:center">返回对象长度或项目个数</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-range.html">range()</a></td>
+<td style="text-align:center">创建一个整数列表</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-type.html">type()</a></td>
+<td style="text-align:center">传递一个参数时返回对象类型，三个参数时返回新类型对象</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-bytearray.html">bytearray()</a></td>
+<td style="text-align:center">返回一个新字节数组。此数组中元素可变，并每个元素值范围在：0 &lt;= x &lt; 256</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-float.html">float()</a></td>
+<td style="text-align:center">转换整数或字符串为浮点数</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/att-list-list.html">list()</a></td>
+<td style="text-align:center">将元组转换为列表</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-callable.html">callable()</a></td>
+<td style="text-align:center">检查一个对象是否可调用</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/att-string-format.html">format()</a></td>
+<td style="text-align:center">格式化字符串</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-locals.html">locals()</a></td>
+<td style="text-align:center">以字典类型返回当前位置的全部局部变量</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-reduce.html">reduce()</a></td>
+<td style="text-align:center">对参数序列中元素进行累积</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-chr.html">chr()</a></td>
+<td style="text-align:center">用一个范围在0～255内的整数作参数，返回一个对应的字符。</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-frozenset.html">frozenset()</a></td>
+<td style="text-align:center">返回一个冻结的集合</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-reload.html">reload()</a></td>
+<td style="text-align:center">重新载入之前载入的模块</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-vars.html">vars()</a></td>
+<td style="text-align:center">返回对象object的属性和属性值的字典对象</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-classmethod.html">classmethod()</a></td>
+<td style="text-align:center">其所对应函数不需要实例化，不需要 self 参数，但第一个参数要是表示自身类的 cls 参数</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-getattr.html">getattr()</a></td>
+<td style="text-align:center">返回一个对象属性值</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-map.html">map()</a></td>
+<td style="text-align:center">根据提供的函数对指定序列做映射</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-repr.html">repr()</a></td>
+<td style="text-align:center">将对象转化为供解释器读取的形式，生成数组</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-xrange.html">xrange()</a></td>
+<td style="text-align:center">将对象转化为供解释器读取的形式，生成生成器</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/func-number-cmp.html">cmp()</a></td>
+<td style="text-align:center">比较2个对象</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-globals.html">globals()</a></td>
+<td style="text-align:center">以字典类型返回当前位置的全部全局变量</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/func-number-max.html">max()</a></td>
+<td style="text-align:center">返回给定参数的最大值，参数可以为序列</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/att-list-reverse.html">reverse()</a></td>
+<td style="text-align:center">将列表元素反向</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-zip.html">zip()</a></td>
+<td style="text-align:center">将可迭代对象作参数，其中对应元素打包成一个个元组，后返回由这些元组组成的列表</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-compile.html">compile()</a></td>
+<td style="text-align:center">将一个字符串编译为字节代码</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-hasattr.html">hasattr()</a></td>
+<td style="text-align:center">判断对象是否包含对应的属性</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-memoryview.html">memoryview()</a></td>
+<td style="text-align:center">返回给定参数的内存查看对象</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/func-number-round.html">round()</a></td>
+<td style="text-align:center">返回浮点数x的四舍五入值</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-__import__.html">import()</a></td>
+<td style="text-align:center">动态加载类和函数</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-complex.html">complex()</a></td>
+<td style="text-align:center">创建一个值为 real + imag * j 的复数或者转化一个字符串或数为复数</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-hash.html">hash()</a></td>
+<td style="text-align:center">获取一个对象的哈希值</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/func-number-min.html">min()</a></td>
+<td style="text-align:center">返回给定参数的最小值，参数可以为序列</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-set.html">set()</a></td>
+<td style="text-align:center">创建一个无序不重复元素集</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-delattr.html">delattr()</a></td>
+<td style="text-align:center">删除属性</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-help.html">help()</a></td>
+<td style="text-align:center">查看函数或模块用途的详细说明</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-next.html">next()</a></td>
+<td style="text-align:center">返回迭代器的下一个项目，需要list()</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-setattr.html">setattr()</a></td>
+<td style="text-align:center">设置属性值</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-dict.html">dict()</a></td>
+<td style="text-align:center">创建一个字典</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-hex.html">hex()</a></td>
+<td style="text-align:center">将10进制整数转换成16进制，以字符串形式表示</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python3/python-func-object.html">object()</a></td>
+<td style="text-align:center">返回一个空对象</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-slice.html">slice()</a></td>
+<td style="text-align:center">切片对象</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-dir.html">dir()</a></td>
+<td style="text-align:center">不带参数时，返回当前范围内的变量、方法和定义的类型列表；带参数时，返回参数的属性、方法列表。如果参数包含方法__dir__()</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-id.html">id()</a></td>
+<td style="text-align:center">返回对象的唯一标识符，标识符是一个整数</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-oct.html">oct()</a></td>
+<td style="text-align:center">将一个整数转换成 8 进制字符串</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-sorted.html">sorted()</a></td>
+<td style="text-align:center">对所有可迭代的对象进行排序操作</td>
+</tr>
+<tr>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-exec.html">exec</a></td>
+<td style="text-align:center">内置表达式</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-file.html">file()</a></td>
+<td style="text-align:center">创建一个 file 对象</td>
+</tr>
+</tbody>
+</table>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%A4%87%E5%BF%98%E5%BD%95/" class="print-no-link">#备忘录</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>Python内置函数</div>
+      <div>https://yesandnoandperhaps.github.io/2024/06/09/py2/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>林秋云</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年6月9日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2024年6月24日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="NC - 非商业性使用">
+                    <i class="iconfont icon-nc"></i>
+                  </span>
+                </a>
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="SA - 相同方式共享">
+                    <i class="iconfont icon-sa"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/06/09/py/" title="Python Tkinter汇总介绍">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Python Tkinter汇总介绍</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/05/30/sx2/" title="空间中三角形四心">
+                        <span class="hidden-mobile">空间中三角形四心</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="gitalk-container"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#gitalk-container', function() {
+      Fluid.utils.createCssLink('/css/gitalk.css')
+      Fluid.utils.createScript('https://lib.baomitu.com/gitalk/1.8.0/gitalk.min.js', function() {
+        var options = Object.assign(
+          {"clientID":"Ov23lihL8rs6IRv6eu2M","clientSecret":"82f5099f7b8f3417a12e29146aec687270b8ce20","repo":"talk","owner":"yesandnoandperhaps","admin":["yesandnoandperhaps"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"first","distractionFreeMode":true,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
+          {
+            id: '1da92daad23abd7f04fb7ab1da530e4b'
+          }
+        )
+        var gitalk = new Gitalk(options);
+        gitalk.render('gitalk-container');
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
