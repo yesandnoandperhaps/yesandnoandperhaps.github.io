@@ -785,6 +785,13 @@
 
   
   <url>
+    <loc>https://yesandnoandperhaps.github.io/tags/%E6%96%87%E5%AD%A6%E5%B8%B8%E8%AF%86/</loc>
+    <lastmod>2024-07-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://yesandnoandperhaps.github.io/tags/%E6%96%87%E5%AD%A6/</loc>
     <lastmod>2024-07-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -800,13 +807,6 @@
   
   <url>
     <loc>https://yesandnoandperhaps.github.io/tags/gif/</loc>
-    <lastmod>2024-07-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yesandnoandperhaps.github.io/tags/%E6%96%87%E5%AD%A6%E5%B8%B8%E8%AF%86/</loc>
     <lastmod>2024-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -885,14 +885,14 @@
   </url>
   
   <url>
-    <loc>https://yesandnoandperhaps.github.io/categories/%E6%96%87%E5%AD%A6/%E7%A5%85%E4%BA%8B%E4%B9%A6%E8%AE%B0/</loc>
+    <loc>https://yesandnoandperhaps.github.io/categories/%E6%96%87%E5%AD%A6/%E5%B8%B8%E8%AF%86/</loc>
     <lastmod>2024-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://yesandnoandperhaps.github.io/categories/%E6%96%87%E5%AD%A6/%E5%B8%B8%E8%AF%86/</loc>
+    <loc>https://yesandnoandperhaps.github.io/categories/%E6%96%87%E5%AD%A6/%E7%A5%85%E4%BA%8B%E4%B9%A6%E8%AE%B0/</loc>
     <lastmod>2024-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
