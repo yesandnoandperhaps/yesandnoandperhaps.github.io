@@ -13,28 +13,27 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="枫霜">
+  <meta name="author" content="林秋云">
   <meta name="keywords" content="">
   
-    <meta name="description" content="当同霜云醉">
+    <meta name="description" content="备忘录">
 <meta property="og:type" content="article">
-<meta property="og:title" content="霜云醉">
-<meta property="og:url" content="https://yesandnoandperhaps.github.io/2024/07/27/s/s38/index.html">
+<meta property="og:title" content="Triangle-calculations-yes库文档">
+<meta property="og:url" content="https://yesandnoandperhaps.github.io/2024/08/01/about/Triangle/index.html">
 <meta property="og:site_name" content="yesandnoandperhaps">
-<meta property="og:description" content="当同霜云醉">
+<meta property="og:description" content="备忘录">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-07-26T23:00:40.000Z">
-<meta property="article:modified_time" content="2024-07-27T04:21:57.504Z">
+<meta property="article:published_time" content="2024-08-01T09:00:40.000Z">
+<meta property="article:modified_time" content="2024-08-01T11:16:59.440Z">
 <meta property="article:author" content="yesandnoandperhaps">
-<meta property="article:tag" content="文学">
-<meta property="article:tag" content="诗集">
+<meta property="article:tag" content="备忘录">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>霜云醉 - yesandnoandperhaps</title>
+  <title>Triangle-calculations-yes库文档 - yesandnoandperhaps</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -269,7 +268,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="霜云醉"></span>
+            <span id="subtitle" data-typed-text="Triangle-calculations-yes库文档"></span>
           
         </div>
 
@@ -280,8 +279,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-07-27 07:00" pubdate>
-          2024年7月27日 早上
+        <time datetime="2024-08-01 17:00" pubdate>
+          2024年8月1日 下午
         </time>
       </span>
     
@@ -292,7 +291,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          23 字
+          711 字
         
       </span>
     
@@ -303,7 +302,7 @@
         
         
         
-          1 分钟
+          6 分钟
         
       </span>
     
@@ -340,14 +339,54 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">霜云醉</h1>
+            <h1 id="seo-header">Triangle-calculations-yes库文档</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="霜云醉">霜云醉</h2>
-<p>  当同霜云醉，芳开落梅迟。<br>
-  花众草沾去，还留明月时。</p>
+                <h2 id="介绍">介绍</h2>
+<p>  Triangle-calculations-yes支持计算<strong>面积、周长、重心、外心、内心、垂心、费马点、拿破仑点</strong></p>
+<p>  其中<strong>费马点</strong>使用退火算法近似</p>
+<h2 id="开始">开始</h2>
+<div class="note note-success">
+            <p>安装：pip install Triangle-calculations-yes</p>
+          </div>
+<h2 id="CircumferenceAndArea三角形周长或面积">CircumferenceAndArea三角形周长或面积</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> Triangle_calculations_yes <span class="hljs-keyword">import</span> CircumferenceAndArea<span class="hljs-comment">#导入</span><br>triangle_calculator = CircumferenceAndArea(a=<span class="hljs-number">0</span>, b=<span class="hljs-number">0</span>, c=<span class="hljs-number">0</span>, bottom=<span class="hljs-number">0</span>, high=<span class="hljs-number">0</span>, pax=<span class="hljs-number">0</span>, pbx=<span class="hljs-number">0</span>, pcx=<span class="hljs-number">0</span>, pay=<span class="hljs-number">0</span>, pby=<span class="hljs-number">0</span>, pcy=<span class="hljs-number">0</span>, paz=<span class="hljs-number">0</span>, pbz=<span class="hljs-number">0</span>, pcz=<span class="hljs-number">0</span>,getparms=<span class="hljs-number">0</span>, dimensionality=<span class="hljs-number">0</span>,decimal=<span class="hljs-number">0</span>)<span class="hljs-comment">#实例化</span><br></code></pre></td></tr></table></figure>
+<h3 id="周长">周长</h3>
+<h4 id="circumference">circumference</h4>
+<p>输入三边长度</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> Triangle_calculations_yes <span class="hljs-keyword">import</span> CircumferenceAndArea<span class="hljs-comment">#导入</span><br>triangle_calculator = CircumferenceAndArea(a=<span class="hljs-number">0</span>, b=<span class="hljs-number">0</span>, c=<span class="hljs-number">0</span>)<span class="hljs-comment">#实例化</span><br><span class="hljs-built_in">print</span>(triangle_calculator.circumference())<br></code></pre></td></tr></table></figure>
+<h4 id="circumference-points">circumference_points</h4>
+<p>输入点坐标</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> Triangle_calculations_yes <span class="hljs-keyword">import</span> CircumferenceAndArea<span class="hljs-comment">#导入</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">pax某点的x轴上的坐标，以此类推</span><br><span class="hljs-string">dimensionality维度，仅限2或3维</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br>triangle_calculator=CircumferenceAndArea(pax=<span class="hljs-number">0</span>,pbx=<span class="hljs-number">0</span>,pcx=<span class="hljs-number">0</span>,pay=<span class="hljs-number">0</span>,pby=<span class="hljs-number">0</span>,pcy=<span class="hljs-number">0</span>,paz=<span class="hljs-number">0</span>,pbz=<span class="hljs-number">0</span>,pcz=<span class="hljs-number">0</span>,dimensionality=<span class="hljs-number">0</span>)<span class="hljs-comment">#实例化</span><br><span class="hljs-built_in">print</span>(triangle_calculator.circumference_points())<br></code></pre></td></tr></table></figure>
+<h3 id="面积">面积</h3>
+<h4 id="area-is-bottom-high">area_is_bottom_high</h4>
+<p>输入底边长和高</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> Triangle_calculations_yes <span class="hljs-keyword">import</span> CircumferenceAndArea<span class="hljs-comment">#导入</span><br>triangle_calculator=CircumferenceAndArea(bottom=<span class="hljs-number">0</span>, high=<span class="hljs-number">0</span>)<span class="hljs-comment">#实例化</span><br><span class="hljs-built_in">print</span>(triangle_calculator.area_is_bottom_high())<br></code></pre></td></tr></table></figure>
+<h4 id="area-is-sides">area_is_sides</h4>
+<p>输入三边长度</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> Triangle_calculations_yes <span class="hljs-keyword">import</span> CircumferenceAndArea<span class="hljs-comment">#导入</span><br>triangle_calculator=CircumferenceAndArea(a=<span class="hljs-number">0</span>, b=<span class="hljs-number">0</span>, c=<span class="hljs-number">0</span>)<span class="hljs-comment">#实例化</span><br><span class="hljs-built_in">print</span>(triangle_calculator.area_is_sides())<br></code></pre></td></tr></table></figure>
+<h4 id="area-is-planar-vector">area_is_planar_vector</h4>
+<p>输入点坐标【仅限二维】</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> Triangle_calculations_yes <span class="hljs-keyword">import</span> CircumferenceAndArea<span class="hljs-comment">#导入</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">pax某点的x轴上的坐标，以此类推</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br>triangle_calculator=CircumferenceAndArea(pax=<span class="hljs-number">0</span>,pbx=<span class="hljs-number">0</span>,pcx=<span class="hljs-number">0</span>,pay=<span class="hljs-number">0</span>,pby=<span class="hljs-number">0</span>,pcy=<span class="hljs-number">0</span>)<span class="hljs-comment">#实例化</span><br><span class="hljs-built_in">print</span>(triangle_calculator.area_is_planar_vector())<br></code></pre></td></tr></table></figure>
+<h4 id="area-is-spatial-vectors">area_is_spatial_vectors</h4>
+<p>输入点坐标【仅限三维】</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> Triangle_calculations_yes <span class="hljs-keyword">import</span> CircumferenceAndArea<span class="hljs-comment">#导入</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">pax某点的x轴上的坐标，以此类推</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br>triangle_calculator=CircumferenceAndArea(pax=<span class="hljs-number">0</span>,pbx=<span class="hljs-number">0</span>,pcx=<span class="hljs-number">0</span>,pay=<span class="hljs-number">0</span>,pby=<span class="hljs-number">0</span>,pcy=<span class="hljs-number">0</span>,paz=<span class="hljs-number">0</span>,pbz=<span class="hljs-number">0</span>,pcz=<span class="hljs-number">0</span>)<span class="hljs-comment">#实例化</span><br><span class="hljs-built_in">print</span>(triangle_calculator.area_is_spatial_vectors())<br></code></pre></td></tr></table></figure>
+<h2 id="TriangleCentres三角形四心">TriangleCentres三角形四心</h2>
+<h3 id="centroid重心">centroid重心</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> Triangle_calculations_yes <span class="hljs-keyword">import</span> TriangleCentres<span class="hljs-comment">#导入</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">pax某点的x轴上的坐标，以此类推</span><br><span class="hljs-string">dimensionality维度，仅限2或3维</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br>triangle_calculator=TriangleCentres(pax=<span class="hljs-number">0</span>,pbx=<span class="hljs-number">0</span>,pcx=<span class="hljs-number">0</span>,pay=<span class="hljs-number">0</span>,pby=<span class="hljs-number">0</span>,pcy=<span class="hljs-number">0</span>,paz=<span class="hljs-number">0</span>,pbz=<span class="hljs-number">0</span>,pcz=<span class="hljs-number">0</span>,dimensionality=<span class="hljs-number">0</span>)<span class="hljs-comment">#实例化</span><br><span class="hljs-built_in">print</span>(triangle_calculator.centroid())<br></code></pre></td></tr></table></figure>
+<h3 id="incentre内心">incentre内心</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> Triangle_calculations_yes <span class="hljs-keyword">import</span> TriangleCentres<span class="hljs-comment">#导入</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">pax某点的x轴上的坐标，以此类推</span><br><span class="hljs-string">dimensionality维度，仅限2或3维</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br>triangle_calculator=TriangleCentres(pax=<span class="hljs-number">0</span>,pbx=<span class="hljs-number">0</span>,pcx=<span class="hljs-number">0</span>,pay=<span class="hljs-number">0</span>,pby=<span class="hljs-number">0</span>,pcy=<span class="hljs-number">0</span>,paz=<span class="hljs-number">0</span>,pbz=<span class="hljs-number">0</span>,pcz=<span class="hljs-number">0</span>,dimensionality=<span class="hljs-number">0</span>)<span class="hljs-comment">#实例化</span><br><span class="hljs-built_in">print</span>(triangle_calculator.incentre())<br></code></pre></td></tr></table></figure>
+<h3 id="orthocentre垂心">orthocentre垂心</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> Triangle_calculations_yes <span class="hljs-keyword">import</span> TriangleCentres<span class="hljs-comment">#导入</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">pax某点的x轴上的坐标，以此类推</span><br><span class="hljs-string">dimensionality维度，仅限2或3维</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br>triangle_calculator=TriangleCentres(pax=<span class="hljs-number">0</span>,pbx=<span class="hljs-number">0</span>,pcx=<span class="hljs-number">0</span>,pay=<span class="hljs-number">0</span>,pby=<span class="hljs-number">0</span>,pcy=<span class="hljs-number">0</span>,paz=<span class="hljs-number">0</span>,pbz=<span class="hljs-number">0</span>,pcz=<span class="hljs-number">0</span>,dimensionality=<span class="hljs-number">0</span>)<br><span class="hljs-built_in">print</span>(triangle_calculator.orthocentre())<br></code></pre></td></tr></table></figure>
+<h3 id="circumcentre外心">circumcentre外心</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> Triangle_calculations_yes <span class="hljs-keyword">import</span> TriangleCentres<span class="hljs-comment">#导入</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">pax某点的x轴上的坐标，以此类推</span><br><span class="hljs-string">dimensionality维度，仅限2或3维</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br>triangle_calculator=TriangleCentres(pax=<span class="hljs-number">0</span>,pbx=<span class="hljs-number">0</span>,pcx=<span class="hljs-number">0</span>,pay=<span class="hljs-number">0</span>,pby=<span class="hljs-number">0</span>,pcy=<span class="hljs-number">0</span>,paz=<span class="hljs-number">0</span>,pbz=<span class="hljs-number">0</span>,pcz=<span class="hljs-number">0</span>,dimensionality=<span class="hljs-number">0</span>)<br><span class="hljs-built_in">print</span>(triangle_calculator.circumcentre())<br></code></pre></td></tr></table></figure>
+<h2 id="FermatProblem费马点">FermatProblem费马点</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> Triangle_calculations_yes <span class="hljs-keyword">import</span> FermatProblem<span class="hljs-comment">#导入</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">pax某点的x轴上的坐标，以此类推</span><br><span class="hljs-string">dimensionality维度，仅限2或3维</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br>triangle_calculator=FermatProblem(pax=<span class="hljs-number">0</span>,pbx=<span class="hljs-number">0</span>,pcx=<span class="hljs-number">0</span>,pay=<span class="hljs-number">0</span>,pby=<span class="hljs-number">0</span>,pcy=<span class="hljs-number">0</span>,paz=<span class="hljs-number">0</span>,pbz=<span class="hljs-number">0</span>,pcz=<span class="hljs-number">0</span>,dimensionality=<span class="hljs-number">0</span>)<span class="hljs-comment">#实例化</span><br><span class="hljs-built_in">print</span>(triangle_calculator.fermat_problem())<br></code></pre></td></tr></table></figure>
+<h2 id="NapoleonicTriangle拿破仑点">NapoleonicTriangle拿破仑点</h2>
+<p>该方法未测试过</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> Triangle_calculations_yes <span class="hljs-keyword">import</span> NapoleonicTriangle<span class="hljs-comment">#导入</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br><span class="hljs-string">pax某点的x轴上的坐标，以此类推</span><br><span class="hljs-string">dimensionality维度，仅限2或3维</span><br><span class="hljs-string">&#x27;&#x27;&#x27;</span><br>triangle_calculator=NapoleonicTriangle(pax=<span class="hljs-number">0</span>,pbx=<span class="hljs-number">0</span>,pcx=<span class="hljs-number">0</span>,pay=<span class="hljs-number">0</span>,pby=<span class="hljs-number">0</span>,pcy=<span class="hljs-number">0</span>,paz=<span class="hljs-number">0</span>,pbz=<span class="hljs-number">0</span>,pcz=<span class="hljs-number">0</span>,dimensionality=<span class="hljs-number">0</span>)<span class="hljs-comment">#实例化</span><br><span class="hljs-built_in">print</span>(triangle_calculator.napoleonic_triangle())<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -366,15 +405,8 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%96%87%E5%AD%A6/" class="category-chain-item">文学</a>
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/%E6%96%87%E5%AD%A6/%E8%AF%97%E8%AF%8D%E6%9B%B2%E8%81%94/" class="category-chain-item">诗词曲联</a>
-  
-  
-
   
 
       </span>
@@ -388,9 +420,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%96%87%E5%AD%A6/" class="print-no-link">#文学</a>
-      
-        <a href="/tags/%E8%AF%97%E9%9B%86/" class="print-no-link">#诗集</a>
+        <a href="/tags/%E5%A4%87%E5%BF%98%E5%BD%95/" class="print-no-link">#备忘录</a>
       
     </div>
   
@@ -402,26 +432,26 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>霜云醉</div>
-      <div>https://yesandnoandperhaps.github.io/2024/07/27/s/s38/</div>
+      <div>Triangle-calculations-yes库文档</div>
+      <div>https://yesandnoandperhaps.github.io/2024/08/01/about/Triangle/</div>
     </div>
     <div class="license-meta">
       
         <div class="license-meta-item">
           <div>作者</div>
-          <div>枫霜</div>
+          <div>林秋云</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年7月27日</div>
+          <div>2024年8月1日</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2024年7月27日</div>
+          <div>2024年8月1日</div>
         </div>
       
       
@@ -464,18 +494,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/08/01/about/Triangle/" title="Triangle-calculations-yes库文档">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Triangle-calculations-yes库文档</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/07/27/s/s37/" title="风流子-无题">
-                        <span class="hidden-mobile">风流子-无题</span>
+                      <a href="/2024/07/27/s/s38/" title="霜云醉">
+                        <span class="hidden-mobile">霜云醉</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -498,7 +522,7 @@
         var options = Object.assign(
           {"clientID":"Ov23lihL8rs6IRv6eu2M","clientSecret":"82f5099f7b8f3417a12e29146aec687270b8ce20","repo":"talk","owner":"yesandnoandperhaps","admin":["yesandnoandperhaps"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"first","distractionFreeMode":true,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
           {
-            id: '7f31a81f21c0f76d8db87425c5f66011'
+            id: '3ff55e2a743a9510e16cbdd397c4be13'
           }
         )
         var gitalk = new Gitalk(options);
