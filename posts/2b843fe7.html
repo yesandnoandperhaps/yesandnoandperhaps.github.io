@@ -1,0 +1,532 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>四声八病集 | yesandnoandperhaps</title><meta name="author" content="yesandnoandperhaps"><meta name="copyright" content="yesandnoandperhaps"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="平头、上尾、蜂腰、鹤膝、大韵、小韵、旁纽、正纽">
+<meta property="og:type" content="article">
+<meta property="og:title" content="四声八病集">
+<meta property="og:url" content="https://yesandnoandperhaps.cn/posts/2b843fe7.html">
+<meta property="og:site_name" content="yesandnoandperhaps">
+<meta property="og:description" content="平头、上尾、蜂腰、鹤膝、大韵、小韵、旁纽、正纽">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yesandnoandperhaps.cn/img/app_ic-playstore.png">
+<meta property="article:published_time" content="2024-12-24T10:12:43.498Z">
+<meta property="article:modified_time" content="2025-01-02T06:11:54.298Z">
+<meta property="article:author" content="yesandnoandperhaps">
+<meta property="article:tag" content="文学">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yesandnoandperhaps.cn/img/app_ic-playstore.png"><link rel="shortcut icon" href="/img/app_ic-playstore.png"><link rel="canonical" href="https://yesandnoandperhaps.cn/posts/2b843fe7.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="ZuYbeLlz0J2QqXmvKFgg8Wkdre5brSTAZ0cECCRH5lo"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+          
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?398d89cac0389320ea3fd7267c57be63";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":-1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'medium_zoom',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '四声八病集',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="//at.alicdn.com/t/c/font_4736746_gtskvoymabk.css"><link rel="stylesheet" href="/css/fonts.css"><link rel="stylesheet" href="/css/center-circle.css"><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/yesandnoandperhaps.xml" title="yesandnoandperhaps" type="application/atom+xml">
+</head><body><!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>/* 引入思源宋体字体 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap');
+
+/* 渐变动画 */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 渐变加载器样式 */
+.gradient-loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Serif SC', serif;  /* 使用思源宋体 */
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #5F9EA0, #4682B4, #B0C4DE);
+  background-size: 300% 300%;
+  animation: gradientAnimation 3s ease infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* 默认隐藏样式 */
+.gradient-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* 文本样式 */
+.loader-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+/* 动画效果，文本上下滑动 */
+.loader-text::after {
+  content: '正在加载...';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slide 3s ease-in-out infinite;
+  font-size: 1.5rem;
+}
+
+/* 滑动动画 */
+@keyframes slide {
+  0% { top: 150%; opacity: 0; }
+  50% { top: 100%; opacity: 1; }
+  100% { top: 150%; opacity: 0; }
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .gradient-loader {
+    font-size: 1.5rem;
+  }
+  .loader-text::after {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gradient-loader {
+    font-size: 1rem;
+  }
+  .loader-text::after {
+    font-size: 0.8rem;
+  }
+}</style></head><body><div class="gradient-loader" id="loading-box"><div class="loader-text">yesandnoandperhaps</div></div><script>const preloader = (() => {
+  const loadingBox = document.getElementById('loading-box');
+  return {
+    endLoading: () => {
+      if (!loadingBox) return;
+      document.body.style.overflow = 'auto'; // 恢复滚动
+      loadingBox.classList.add('hidden'); // 隐藏加载动画
+    },
+    initLoading: () => {
+      if (!loadingBox) return;
+      document.body.style.overflow = 'hidden'; // 禁止滚动
+      loadingBox.classList.remove('hidden'); // 显示加载动画
+    }
+  };
+})();
+
+const manageLoadingTimeout = (() => {
+  let timeoutID;
+  const handleTimeout = () => {
+    preloader.endLoading(); // 超时后直接结束加载动画
+    clearTimeout(timeoutID);
+  };
+
+  return {
+    start: (duration = 1800) => {
+      timeoutID = setTimeout(handleTimeout, duration);
+    },
+    clear: () => {
+      clearTimeout(timeoutID);
+    }
+  };
+})();
+
+// 初始化加载动画
+preloader.initLoading();
+manageLoadingTimeout.start();
+
+// 页面加载完成后隐藏加载动画并清除超时
+window.addEventListener('load', () => {
+  try {
+    manageLoadingTimeout.clear();
+    preloader.endLoading();
+  } catch (error) {
+    console.error('Error during loading cleanup:', error);
+  }
+});</script></body></html><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/app_ic-playstore.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">207</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">49</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-folder"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw iconfont icon-widgets"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-tag"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/contribute/"><i class="fa-fw iconfont icon-clipboard-check"></i><span> 投稿要求</span></a></div><div class="menus_item"><a class="site-page" href="/submission/"><i class="fa-fw iconfont icon-edit"></i><span> 投稿</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-users"></i><span> 关于与创作者</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(45deg, #5F9EA0, #4682B4, #B0C4DE);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">yesandnoandperhaps</span></a><a class="nav-page-title" href="/"><span class="site-name">四声八病集</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="iconfont icon-search"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-folder"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw iconfont icon-widgets"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-tag"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/contribute/"><i class="fa-fw iconfont icon-clipboard-check"></i><span> 投稿要求</span></a></div><div class="menus_item"><a class="site-page" href="/submission/"><i class="fa-fw iconfont icon-edit"></i><span> 投稿</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-users"></i><span> 关于与创作者</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="iconfont icon-bars"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">四声八病集</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="iconfont icon-calendar-alt"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-12-24T10:12:43.498Z" title="发表于 2024-12-24 18:12:43">2024-12-24</time><span class="post-meta-separator">|</span><i class="iconfont icon-history"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-01-02T06:11:54.298Z" title="更新于 2025-01-02 14:11:54">2025-01-02</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E4%BD%9C%E8%80%85/">作者</a><i class="iconfont icon-angle-right"></i><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E4%BD%9C%E8%80%85/%E6%9D%8E%E5%B2%9A%E9%9C%8F/">李岚霏</a><i class="iconfont icon-angle-right"></i><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E6%96%87%E5%AD%A6%E7%AE%80%E8%A8%80/">文学简言</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="iconfont icon-file-word"></i><span class="post-meta-label">总字数:</span><span class="word-count">2.6k</span><span class="post-meta-separator">|</span><i class="iconfont icon-clock"></i><span class="post-meta-label">阅读时长:</span><span>7分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="iconfont icon-eye"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><link rel="stylesheet external nofollow noreferrer" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><h2 id="注">注</h2>
+<p>文中，声为清浊，调为四声，特殊注明时为平仄</p>
+<p>文中，一句为两联</p>
+<h2 id="四声">四声</h2>
+<p>平、上、去、入</p>
+<h2 id="八病">八病</h2>
+<h3 id="平头">平头</h3>
+<h4 id="说法一">说法一</h4>
+<p>五言诗的第一、二字不能与第六、七字调相同。不然就犯了平头的毛病。</p>
+<p>如：芳时淑气清，提壶台上倾。</p>
+<p><b>芳时</b>与<b>提壶</b>同平声，即平头。</p>
+<p>注：<b>芳时淑气清，提壶台上倾。</b>源于《全唐诗外编·王重民、孙望、童养年》</p>
+<p>注：此为第一句需不犯。</p>
+<h4 id="说法二">说法二</h4>
+<p>指上联的第一、二字分别与下联的第一、二字同调。</p>
+<p>如：今日良宴会，欢乐难具陈。</p>
+<p><b>今</b>与<b>欢</b>同平声，<b>日</b>与<b>乐</b>同入声，即平头。</p>
+<p>注：<b>今日良宴会，欢乐难具陈。</b>源于《古诗十九首·今日良宴会·东汉无名氏》</p>
+<p>注：此为每句皆需不犯。</p>
+<h4 id="说法二添">说法二添</h4>
+<p>今人蒋绍愚认为平头主要是对上下联的第二字而言，上下联第一字同平声是可以的，同仄声，只要不同为上、去、入，亦可。</p>
+<h3 id="上尾">上尾</h3>
+<h4 id="说法一-2">说法一</h4>
+<p>指上联尾字与下联尾字同调。</p>
+<p>如：西北有高楼，上与浮云齐。</p>
+<p><b>楼</b>与<b>齐</b>同平声。即上尾。</p>
+<p>如二：青青河畔草，郁郁园中柳。</p>
+<p><b>草</b>与<b>柳</b>同上声。即上尾。</p>
+<p>注：<b>西北有高楼，上与浮云齐。</b>源于《古诗十九首·西北有高楼·东汉无名氏》<br>
+注：<b>青青河畔草，郁郁园中柳。</b>源于《古诗十九首·青青河畔草·东汉无名氏》</p>
+<h3 id="说法二-2">说法二</h3>
+<p>清人仇兆鳌认为一联尾与三联尾连用同声，亦称上尾。</p>
+<p>如（1）：</p>
+<p>汉主离宫接露台，秦川一半夕阳开。<br>
+青山尽是朱旗绕，碧涧翻从玉殿来。<br>
+新丰树里行人<b>度</b>，小苑城边猎骑回。<br>
+闻道甘泉能献<b>赋</b>，悬知独有子云才。</p>
+<p>第五联末字<b>度</b>，第七联末字<b>赋</b>，同去声。即上尾。</p>
+<p>注：如（1）源于《和太常韦主簿五郎温汤寓目之作·唐王维》</p>
+<p>又注：《续金针诗格》曰：“诗有<b>齐梁格</b>：四平头，谓四联皆用平字入是也；两平头，谓第一联第三联用平字入是也。”</p>
+<p>而言：故此说法更似<b>齐梁格</b>。</p>
+<h3 id="蜂腰">蜂腰</h3>
+<h3 id="说法一-3">说法一</h3>
+<p>指五言诗一联内第二字与第四字同调。</p>
+<p>如：客从远方来，遗我双鲤鱼。</p>
+<p><b>从</b>与<b>方</b>同平声。即蜂腰。</p>
+<p>注：<b>客从远方来，遗我双鲤鱼。</b>源于《饮马长城窟行·东汉蔡邕（存疑）》</p>
+<h3 id="说法二-3">说法二</h3>
+<p>指五言诗一联内第二字与第四字的声不能为浊且第三字是清。</p>
+<p>如：客从远方来，遗我双鲤鱼。</p>
+<p><b>我</b>与<b>鲤</b>皆浊，中<b>双</b>为清。即蜂腰。</p>
+<p>注：<b>客从远方来，遗我双鲤鱼。</b>源于《饮马长城窟行·东汉蔡邕（存疑）》</p>
+<h3 id="说法三">说法三</h3>
+<p><b>说法一</b>与<b>说法二</b>并。</p>
+<h3 id="说法四">说法四</h3>
+<p>指五言诗一联内第二字与第五字同调。</p>
+<p>如：青轩明月时，紫殿秋风日。</p>
+<p><b>轩</b>与<b>时</b>同平声，<b>殿</b>与<b>日</b>同仄声。即蜂腰。</p>
+<p>注：<b>青轩明月时，紫殿秋风日。</b>源于《咏帘诗·南朝齐虞炎》</p>
+<h3 id="说法五">说法五</h3>
+<p>五字中首尾皆浊而中间一字清————宋蔡宽夫。</p>
+<p>中清四浊：浊浊清浊浊。</p>
+<p>如：邂逅承际会，得充君后房。</p>
+<p><b>邂逅承际会</b>为<b>浊浊清浊浊</b>。即蜂腰。</p>
+<p>注：<b>邂逅承际会，得充君后房。</b>源于《同声歌·东汉张衡》</p>
+<p>仇兆鳌以为<b>浊为仄，清为平</b>而王力以为仇兆鳌此恐怕不是蔡宽夫本意。</p>
+<h2 id="鹤膝">鹤膝</h2>
+<h3 id="说法一-4">说法一</h3>
+<p>上句上联末字与下句上联末字同调。</p>
+<p>如：陟野看阳春，登楼望初节；绿池始沾裳，弱兰未央结。<b>春</b>与<b>裳</b>同平声。即鹤膝。</p>
+<h3 id="说法二-4">说法二</h3>
+<p>五字中首尾皆清而中间一字浊————宋蔡宽夫。</p>
+<p>中浊四清：清清浊清清。</p>
+<p>如：徽音冠青云，声响流四方。</p>
+<p><b>徽音冠青云</b>为<b>清清浊清清</b>。即鹤膝。</p>
+<p>注：<b>徽音冠青云，声响流四方。</b>源于《有女篇·魏晋傅玄》</p>
+<p>仇兆鳌以为<b>浊为仄，清为平</b>而王力以为仇兆鳌此恐怕不是蔡宽夫本意。</p>
+<h3 id="说法三-2">说法三</h3>
+<p>空海法师《文镜秘府论》曰：“鶴膝詩者，五言詩第五字不得與第十五字同聲。言兩頭細，中央粗，似鶴膝也，以其詩中央有病。詩曰；‘撥棹金陵渚，遵流背城闕，浪蹙飛船影，山掛垂輪月。’又雲：‘陟野看陽春，登樓望初節，綠池始沾裳，弱蘭未央結。’”</p>
+<p>五言诗的第五个字和第十五个字不可同调。并举例说：</p>
+<p>如：拨棹金陵渚，遵流背城阙。浪蹙飞船影，山挂垂轮月。<b>渚</b>与<b>影</b>皆上声。即鹤膝。</p>
+<p>解言：<b>上尾-说法二</b>有之，鱼引《续金针诗格》以为此伊<b>齐梁格</b>。</p>
+<h3 id="说法三添">说法三添</h3>
+<p>鹤膝不仅仅是第一联与第三联，还包括所有的上联，可以一直延伸下去：</p>
+<p>注：下言<b>句</b>为<b>联</b><br>
+空海法师《文镜秘府论》曰：「或曰：“如班姬詩雲：‘新裂齊紈素，皎潔如霜雪，裁為合歡扇，團團似明月。’‘素’與‘扇’同去聲是也。此曰第三句者，舉其大法耳。但從首至末，皆須以次避之，若第三句不得與第五句相犯，第五句不得與第七句相犯。犯法准前也。”<br>
+劉氏云：“鶴膝者，五言詩第五字不得與第十五字同聲。即古詩曰：‘客從遠方來，遺我一書劄，上言長相思，下言久離別。’是也。皆次第相避，不得以四句為斷。”」</p>
+<p>皆需与前联非同调</p>
+<p>如：<br>
+平平平平平，仄仄仄仄仄。<br>
+平平平平仄，仄仄仄仄仄。<br>
+平平平平<b>平</b>，仄仄仄仄仄。<br>
+平平平平<b>平</b>，仄仄仄仄仄。</p>
+<p>即鹤膝</p>
+<p>解言：由<b>鹤膝-说法三</b>引解言曰：“以为此伊<b>齐梁格</b>”。</p>
+<h2 id="大韵">大韵</h2>
+<p>指五言诗上联首一字，与下联尾一字同韵。</p>
+<p>如：微风吹罗袂，明月耀清辉。微辉同韵。即大韵。</p>
+<p>注：<b>微风吹罗袂，明月耀清辉。</b>源于《咏怀八十二首·其一·魏晋阮籍》</p>
+<p>特注：《汉语诗律学·王力》中书曰“阮籍诗‘微风照罗袂，明月耀清辉。’”</p>
+<p>又如：胡姬年十五，春日独当垆。胡垆同韵。即大韵。</p>
+<p>注：<b>胡姬年十五，春日独当垆。</b>源于《羽林郎·东汉辛延年》</p>
+<h2 id="小韵">小韵</h2>
+<h3 id="说法一-5">说法一</h3>
+<p>五言诗两联各联之间不能有同属一个韵部的字。</p>
+<p>如：古树老连石，急泉清露沙。</p>
+<p><b>树</b>与<b>露</b>，<b>连</b>与<b>泉</b>同韵部。即小韵。</p>
+<p>又如：薄帷鉴明月，清风吹我襟。</p>
+<p><b>明</b>与<b>清</b>同韵部。即小韵。</p>
+<p>注：<b>古树老连石，急泉清露沙。</b>源于《题卢处士山居·唐温庭筠》<br>
+注：<b>薄帷鉴明月，清风吹我襟。</b>源于《咏怀八十二首·其一·魏晋阮籍》</p>
+<h3 id="说法二-5">说法二</h3>
+<p>五言诗上联第四字，不得与下联第一字同韵部。《汉语诗律学·王力》</p>
+<p>如：薄帷鉴明月，清风吹我襟。</p>
+<p><b>明</b>与<b>清</b>同韵部。即小韵。</p>
+<p>注：<b>薄帷鉴明月，清风吹我襟。</b>源于《咏怀八十二首·其一·魏晋阮籍》</p>
+<h2 id="旁纽">旁纽</h2>
+<h3 id="说法一-6">说法一</h3>
+<p>五言诗上联、下联中，不能有相同韵部的字出现。</p>
+<p>如：丈夫且安坐，梁尘将欲起。<b>长</b>与<b>梁</b>同韵。长字上声为丈，上句首用丈字，下句首用梁字。即旁纽。</p>
+<p>意：丈属于阳部上声（广韵）处上联，梁属于阳部平声（广韵）处下联，故同韵部。即旁纽。</p>
+<h3 id="说法一添">说法一添</h3>
+<p>五言诗上联、下联中，不能有相同韵母（声调相同）的字出现。</p>
+<p>如（1）：丈夫且安坐，梁尘将欲起</p>
+<p>长梁同韵，长字上声为丈，上句首用丈字，下句首用梁字，即旁纽。</p>
+<p>注：广韵或平水韵中丈与梁调皆不同，则<b>如（1）</b>举例错误。</p>
+<p>許思萊·東漢-構擬：引<b>如（1）</b>丈（ḍɑ́ŋ）与梁（reŋ）韵母实则不同；</p>
+<p>如（2）：丈人文力犹强健，岂傍青门学种瓜。</p>
+<p>丈属于阳部上声（广韵）处上联，强属阳部平声（广韵）处上联。《汉语诗律学·王力》中定为旁纽。故而得<b>旁纽-说法一</b>正确。</p>
+<p>附：許思萊·東漢-構擬：丈（ḍɑ́ŋ）与強（ghaŋ）韵母实则不同；</p>
+<p>再引：空海法师《文镜秘府论》曰：“傍紐詩者，五言詩一句之中有‘月’字，更不得安‘魚’、‘元’、‘阮’、‘願’等之字，此即雙聲，雙聲即犯傍紐。亦曰，<b>五字中犯最急，十字中犯稍寬</b>。”</p>
+<p>又引<b>如（2）</b>与<b>再引</b>知：五言诗每五字中，不能有相同韵部的字出现。</p>
+<p>而故<b>五言诗上联、下联中，不能有相同韵母（声调相同）的字出现。</b>此言错。</p>
+<h3 id="说法二-6">说法二</h3>
+<p>一句中声母相同且有隔字。即旁纽。</p>
+<p>空海法师《文镜秘府论》曰：“傍紐詩者，五言詩一句之中有‘月’字，更不得安‘魚’、‘元’、‘阮’、‘願’等之字，此即雙聲，雙聲即犯傍紐。亦曰，五字中犯最急，十字中犯稍寬。如此之類，是其病。詩曰：‘魚遊見風月，獸走畏傷蹄。’（如此類者，是又犯傍紐病。）又曰：‘元生愛皓月，阮氏願清風，取樂情無已，賞玩未能同。’又曰：‘雲生遮麗月，波動亂遊魚，涼風便入體，寒氣漸鑽膚。’”</p>
+<h2 id="正纽">正纽</h2>
+<p>五言诗两句内不能杂用声母韵部相同的四声各字。</p>
+<p>比如：梁简文帝诗：轻霞落暮锦，流火散秋金。锦与金声母韵部相同，只调不同。即正纽（流与秋<b>小韵-说法一</b>）。</p>
+<p>注：锦与金声母韵母也相同。</p>
+<p>又如：溪、起、憩，为一纽，诗云：朝济清溪岸，夕憩五龙泉，溪、憩二字同用。即正纽。</p>
+<p>又：家、假、嫁，为一纽，诗云：我本汉家女，来嫁单于庭。家嫁二字同用。即正纽。</p>
+<hr>
+<div class="flink"><div class="flink-name">相关阅读</div><div class="flink-list">
+      <div class="flink-list-item">
+        <a href="https://yesandnoandperhaps.cn/posts/31a4771c.html" title="文镜秘府论·文二十八种病" target="_blank">
+          <div class="flink-item-icon">
+            <img class="no-lightbox" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/img/aaaaaa.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="文镜秘府论·文二十八种病" />
+          </div>
+          <div class="flink-item-name">文镜秘府论·文二十八种病</div>
+          <div class="flink-item-desc" title="日本金剛峰寺禪念沙門遍照金剛弘法大師空海（774-835），俗姓佐伯，804年（貞元二十年）七月至中國。806年（元和元年）八月回日本，做此書，專論南朝至中唐，分天地東南西北六卷。又簡寫為《文筆眼心抄》。所引資料，除皎然《詩式》外均佚，因而有重要參考價值。">日本金剛峰寺禪念沙門遍照金剛弘法大師空海（774-835），俗姓佐伯，804年（貞元二十年）七月至中國。806年（元和元年）八月回日本，做此書，專論南朝至中唐，分天地東南西北六卷。又簡寫為《文筆眼心抄》。所引資料，除皎然《詩式》外均佚，因而有重要參考價值。</div>
+        </a>
+      </div>
+      <div class="flink-list-item">
+        <a href="https://github.com/yesandnoandperhaps/LightweightNotepad?tab=readme-ov-file" rel="external nofollow noreferrer" title="LightweightNotepad" target="_blank">
+          <div class="flink-item-icon">
+            <img class="no-lightbox" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/img/py.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="LightweightNotepad" />
+          </div>
+          <div class="flink-item-name">LightweightNotepad</div>
+          <div class="flink-item-desc" title="永明体检测软件">永明体检测软件</div>
+        </a>
+      </div>
+      <div class="flink-list-item">
+        <a href="https://yesandnoandperhaps.cn/posts/e8a53eab.html" title="LightweightNotepad教程" target="_blank">
+          <div class="flink-item-icon">
+            <img class="no-lightbox" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/img/py.jpg" onerror='this.onerror=null;this.src="/img/friend_404.gif"' alt="LightweightNotepad教程" />
+          </div>
+          <div class="flink-item-name">LightweightNotepad教程</div>
+          <div class="flink-item-desc" title="LightweightNotepad软件教程">LightweightNotepad软件教程</div>
+        </a>
+      </div></div></div>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="iconfont icon-user-circle"></i>文章作者: </span><span class="post-copyright-info"><a href="https://yesandnoandperhaps.cn">李岚霏</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="iconfont icon-share-square"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yesandnoandperhaps.cn/posts/2b843fe7.html">https://yesandnoandperhaps.cn/posts/2b843fe7.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="iconfont icon-exclamation-circle"></i>版权声明: </span><span class="post-copyright-info">转载请声明出处</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%96%87%E5%AD%A6/">文学</a></div><div class="post-share"><div class="social-share" data-image="/img/app_ic-playstore.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/31a4771c.html" title="文镜秘府论·文二十八种病"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">文镜秘府论·文二十八种病</div></div><div class="info-2"><div class="info-item-1">日本金剛峰寺禪念沙門遍照金剛弘法大師空海（774-835），俗姓佐伯，804年（貞元二十年）七月至中國。806年（元和元年）八月回日本，做此書，專論南朝至中唐，分天地東南西北六卷。又簡寫為《文筆眼心抄》。所引資料，除皎然《詩式》外均佚，因而有重要參考價值。</div></div></div></a><a class="pagination-related" href="/posts/74fe1a01.html" title="千古流芳：钦廉历代著者要录"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">千古流芳：钦廉历代著者要录</div></div><div class="info-2"><div class="info-item-1">包显祖-广东合浦人。明宣德十年（1435）乙卯顺天乡试举人，官广西怀集训导。编纂《合浦县志》。（《广东方志要录》）…………</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/61f3f471.html" title="无律三诗"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-05-28</div><div class="info-item-2">无律三诗</div></div><div class="info-2"><div class="info-item-1">保持微笑；壮气；耗气</div></div></div></a><a class="pagination-related" href="/posts/2d595325.html" title="地府体系介绍"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-05-27</div><div class="info-item-2">地府体系介绍</div></div><div class="info-2"><div class="info-item-1">地府体系介绍</div></div></div></a><a class="pagination-related" href="/posts/bbfef51a.html" title="荒乱-第一章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-25</div><div class="info-item-2">荒乱-第一章</div></div><div class="info-2"><div class="info-item-1">民国五年，清政府刚灭亡几年，袁世凯刚死一个月，南方地区。</div></div></div></a><a class="pagination-related" href="/posts/8e9dc232.html" title="对联集一"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-05-25</div><div class="info-item-2">对联集一</div></div><div class="info-2"><div class="info-item-1">秋心尽付南飞雁</div></div></div></a><a class="pagination-related" href="/posts/9771472f.html" title="荒乱-第十一章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十一章</div></div><div class="info-2"><div class="info-item-1">万灰脸等人：（民国五年七月九日中午）</div></div></div></a><a class="pagination-related" href="/posts/a767abf7.html" title="荒乱-第十二章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十二章</div></div><div class="info-2"><div class="info-item-1">李风岚说：“自然厉害，带哥哥进去吧。”</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/app_ic-playstore.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">yesandnoandperhaps</div><div class="author-info-description">一个文学网站，收集各种今人所写文章，欢迎向我们投稿！</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">207</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">49</div></a></div><a id="card-info-btn" href="/submission/"><i class="iconfont icon-edit"></i><span>投稿</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8"><span class="toc-number">1.</span> <span class="toc-text">注</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E5%A3%B0"><span class="toc-number">2.</span> <span class="toc-text">四声</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E7%97%85"><span class="toc-number">3.</span> <span class="toc-text">八病</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B9%B3%E5%A4%B4"><span class="toc-number">3.1.</span> <span class="toc-text">平头</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%B8%80"><span class="toc-number">3.1.1.</span> <span class="toc-text">说法一</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%BA%8C"><span class="toc-number">3.1.2.</span> <span class="toc-text">说法二</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%BA%8C%E6%B7%BB"><span class="toc-number">3.1.3.</span> <span class="toc-text">说法二添</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8A%E5%B0%BE"><span class="toc-number">3.2.</span> <span class="toc-text">上尾</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%B8%80-2"><span class="toc-number">3.2.1.</span> <span class="toc-text">说法一</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%BA%8C-2"><span class="toc-number">3.3.</span> <span class="toc-text">说法二</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%9C%82%E8%85%B0"><span class="toc-number">3.4.</span> <span class="toc-text">蜂腰</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%B8%80-3"><span class="toc-number">3.5.</span> <span class="toc-text">说法一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%BA%8C-3"><span class="toc-number">3.6.</span> <span class="toc-text">说法二</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%B8%89"><span class="toc-number">3.7.</span> <span class="toc-text">说法三</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E5%9B%9B"><span class="toc-number">3.8.</span> <span class="toc-text">说法四</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%BA%94"><span class="toc-number">3.9.</span> <span class="toc-text">说法五</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%B9%A4%E8%86%9D"><span class="toc-number">4.</span> <span class="toc-text">鹤膝</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%B8%80-4"><span class="toc-number">4.1.</span> <span class="toc-text">说法一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%BA%8C-4"><span class="toc-number">4.2.</span> <span class="toc-text">说法二</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%B8%89-2"><span class="toc-number">4.3.</span> <span class="toc-text">说法三</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%B8%89%E6%B7%BB"><span class="toc-number">4.4.</span> <span class="toc-text">说法三添</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E9%9F%B5"><span class="toc-number">5.</span> <span class="toc-text">大韵</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E9%9F%B5"><span class="toc-number">6.</span> <span class="toc-text">小韵</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%B8%80-5"><span class="toc-number">6.1.</span> <span class="toc-text">说法一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%BA%8C-5"><span class="toc-number">6.2.</span> <span class="toc-text">说法二</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%81%E7%BA%BD"><span class="toc-number">7.</span> <span class="toc-text">旁纽</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%B8%80-6"><span class="toc-number">7.1.</span> <span class="toc-text">说法一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%B8%80%E6%B7%BB"><span class="toc-number">7.2.</span> <span class="toc-text">说法一添</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%B3%95%E4%BA%8C-6"><span class="toc-number">7.3.</span> <span class="toc-text">说法二</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A3%E7%BA%BD"><span class="toc-number">8.</span> <span class="toc-text">正纽</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/28c184f4.html" title="粉嫩色">粉嫩色</a><time datetime="2025-01-19T04:26:39.031Z" title="发表于 2025-01-19 12:26:39">2025-01-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/dcd6a765.html" title="亲昵地靠近着你">亲昵地靠近着你</a><time datetime="2025-01-10T04:28:17.837Z" title="发表于 2025-01-10 12:28:17">2025-01-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/ebda9c43.html" title="夜间（其四）">夜间（其四）</a><time datetime="2025-01-05T06:53:09.334Z" title="发表于 2025-01-05 14:53:09">2025-01-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/5cf78526.html" title="夜间（其三）">夜间（其三）</a><time datetime="2025-01-05T06:51:02.049Z" title="发表于 2025-01-05 14:51:02">2025-01-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/11e92674.html" title="夜间（其二）">夜间（其二）</a><time datetime="2025-01-05T06:50:09.338Z" title="发表于 2025-01-05 14:50:09">2025-01-05</time></div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(45deg, #5F9EA0, #4682B4, #B0C4DE);"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By yesandnoandperhaps</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">随随便便，吃饭重要</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="iconfont icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="iconfont icon-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="iconfont icon-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="iconfont icon-cog"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="iconfont icon-list-ul"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="iconfont icon-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="iconfont icon-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+  const option = null
+
+  const commentCount = n => {
+    const isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+    if (isCommentCount) {
+      isCommentCount.textContent= n
+    }
+  }
+
+  const initGitalk = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGitalk = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const gitalk = new Gitalk({
+      clientID: 'Ov23lihL8rs6IRv6eu2M',
+      clientSecret: '82f5099f7b8f3417a12e29146aec687270b8ce20',
+      repo: 'talk',
+      owner: 'yesandnoandperhaps',
+      admin: ['yesandnoandperhaps'],
+      updateCountCallback: commentCount,
+      ...option,
+      id: isShuoshuo ? path : (option && option.id) || 'cce5401ea873113529cfc86fce275589'
+    })
+
+    gitalk.render('gitalk-container')
+  }
+
+  const loadGitalk = async(el, path) => {
+    if (typeof Gitalk === 'function') initGitalk(el, path)
+    else {
+      await btf.getCSS('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css')
+      await btf.getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js')
+      initGitalk(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Gitalk' === 'Gitalk'
+      ? window.shuoshuoComment = { loadComment: loadGitalk }
+      : window.loadOtherComment = loadGitalk
+    return
+  }
+
+  if ('Gitalk' === 'Gitalk' || !true) {
+    if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+    else loadGitalk()
+  } else {
+    window.loadOtherComment = loadGitalk
+  }
+})()</script></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* 定义 CSS 变量 */
+:root {
+  --font-family: "Noto Serif SC", serif;
+  /*--font-size: 14px;*/
+  --letter-spacing: 0.02em;
+  --code-font-size: 100%;
+  --font-weight: 500; /* 默认字体粗细 */
+}
+
+/* 应用 CSS 变量 */
+body {
+  font-family: var(--font-family);
+  /*font-size: var(--font-size);*/
+  letter-spacing: var(--letter-spacing);
+  font-weight: var(--font-weight);
+}
+
+/* 代码字体大小 */
+code, pre {
+  font-size: var(--code-font-size);
+}

@@ -1,0 +1,503 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>荒乱-第二章 | yesandnoandperhaps</title><meta name="author" content="yesandnoandperhaps"><meta name="copyright" content="yesandnoandperhaps"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="几天后，列车被马拉着走到延康城。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="荒乱-第二章">
+<meta property="og:url" content="https://yesandnoandperhaps.cn/posts/8be819c2.html">
+<meta property="og:site_name" content="yesandnoandperhaps">
+<meta property="og:description" content="几天后，列车被马拉着走到延康城。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yesandnoandperhaps.cn/img/app_ic-playstore.png">
+<meta property="article:published_time" content="2024-06-25T11:00:30.000Z">
+<meta property="article:modified_time" content="2024-12-13T16:54:25.988Z">
+<meta property="article:author" content="yesandnoandperhaps">
+<meta property="article:tag" content="文学">
+<meta property="article:tag" content="叙事">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yesandnoandperhaps.cn/img/app_ic-playstore.png"><link rel="shortcut icon" href="/img/app_ic-playstore.png"><link rel="canonical" href="https://yesandnoandperhaps.cn/posts/8be819c2.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="ZuYbeLlz0J2QqXmvKFgg8Wkdre5brSTAZ0cECCRH5lo"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+          
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?398d89cac0389320ea3fd7267c57be63";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":-1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'medium_zoom',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '荒乱-第二章',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="//at.alicdn.com/t/c/font_4736746_gtskvoymabk.css"><link rel="stylesheet" href="/css/fonts.css"><link rel="stylesheet" href="/css/center-circle.css"><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/yesandnoandperhaps.xml" title="yesandnoandperhaps" type="application/atom+xml">
+</head><body><!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>/* 引入思源宋体字体 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap');
+
+/* 渐变动画 */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 渐变加载器样式 */
+.gradient-loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Serif SC', serif;  /* 使用思源宋体 */
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #5F9EA0, #4682B4, #B0C4DE);
+  background-size: 300% 300%;
+  animation: gradientAnimation 3s ease infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* 默认隐藏样式 */
+.gradient-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* 文本样式 */
+.loader-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+/* 动画效果，文本上下滑动 */
+.loader-text::after {
+  content: '正在加载...';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slide 3s ease-in-out infinite;
+  font-size: 1.5rem;
+}
+
+/* 滑动动画 */
+@keyframes slide {
+  0% { top: 150%; opacity: 0; }
+  50% { top: 100%; opacity: 1; }
+  100% { top: 150%; opacity: 0; }
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .gradient-loader {
+    font-size: 1.5rem;
+  }
+  .loader-text::after {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gradient-loader {
+    font-size: 1rem;
+  }
+  .loader-text::after {
+    font-size: 0.8rem;
+  }
+}</style></head><body><div class="gradient-loader" id="loading-box"><div class="loader-text">yesandnoandperhaps</div></div><script>const preloader = (() => {
+  const loadingBox = document.getElementById('loading-box');
+  return {
+    endLoading: () => {
+      if (!loadingBox) return;
+      document.body.style.overflow = 'auto'; // 恢复滚动
+      loadingBox.classList.add('hidden'); // 隐藏加载动画
+    },
+    initLoading: () => {
+      if (!loadingBox) return;
+      document.body.style.overflow = 'hidden'; // 禁止滚动
+      loadingBox.classList.remove('hidden'); // 显示加载动画
+    }
+  };
+})();
+
+const manageLoadingTimeout = (() => {
+  let timeoutID;
+  const handleTimeout = () => {
+    preloader.endLoading(); // 超时后直接结束加载动画
+    clearTimeout(timeoutID);
+  };
+
+  return {
+    start: (duration = 1800) => {
+      timeoutID = setTimeout(handleTimeout, duration);
+    },
+    clear: () => {
+      clearTimeout(timeoutID);
+    }
+  };
+})();
+
+// 初始化加载动画
+preloader.initLoading();
+manageLoadingTimeout.start();
+
+// 页面加载完成后隐藏加载动画并清除超时
+window.addEventListener('load', () => {
+  try {
+    manageLoadingTimeout.clear();
+    preloader.endLoading();
+  } catch (error) {
+    console.error('Error during loading cleanup:', error);
+  }
+});</script></body></html><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/app_ic-playstore.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">207</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">49</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-folder"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw iconfont icon-widgets"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-tag"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/contribute/"><i class="fa-fw iconfont icon-clipboard-check"></i><span> 投稿要求</span></a></div><div class="menus_item"><a class="site-page" href="/submission/"><i class="fa-fw iconfont icon-edit"></i><span> 投稿</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-users"></i><span> 关于与创作者</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(45deg, #5F9EA0, #4682B4, #B0C4DE);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">yesandnoandperhaps</span></a><a class="nav-page-title" href="/"><span class="site-name">荒乱-第二章</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="iconfont icon-search"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-folder"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw iconfont icon-widgets"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-tag"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/contribute/"><i class="fa-fw iconfont icon-clipboard-check"></i><span> 投稿要求</span></a></div><div class="menus_item"><a class="site-page" href="/submission/"><i class="fa-fw iconfont icon-edit"></i><span> 投稿</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-users"></i><span> 关于与创作者</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="iconfont icon-bars"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">荒乱-第二章</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="iconfont icon-calendar-alt"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-06-25T11:00:30.000Z" title="发表于 2024-06-25 19:00:30">2024-06-25</time><span class="post-meta-separator">|</span><i class="iconfont icon-history"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-13T16:54:25.988Z" title="更新于 2024-12-14 00:54:25">2024-12-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E6%96%87%E5%AD%A6/">文学</a><i class="iconfont icon-angle-right"></i><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E6%96%87%E5%AD%A6/%E7%A5%85%E4%BA%8B%E4%B9%A6%E8%AE%B0/">祅事书记</a><i class="iconfont icon-angle-right"></i><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E4%BD%9C%E8%80%85/">作者</a><i class="iconfont icon-angle-right"></i><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E6%96%87%E5%AD%A6/%E7%A5%85%E4%BA%8B%E4%B9%A6%E8%AE%B0/%E8%8D%92%E4%B9%B1/">荒乱</a><i class="iconfont icon-angle-right"></i><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E4%BD%9C%E8%80%85/%E6%9D%8E%E5%B2%9A%E9%9C%8F/">李岚霏</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="iconfont icon-file-word"></i><span class="post-meta-label">总字数:</span><span class="word-count">2.9k</span><span class="post-meta-separator">|</span><i class="iconfont icon-clock"></i><span class="post-meta-label">阅读时长:</span><span>8分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="iconfont icon-eye"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><link rel="stylesheet external nofollow noreferrer" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><p>  几天后，列车被马拉着走到延康城。列车上的人走下了车，那些人远看是土匪，近看是狍鸮，永远吃不饱……这些人有拿洋枪的，不是帮我们打士绅豪强的，是用来吃人的……还有人带着惊堂木，不是为了帮我们审冤案的，是为了判冤案的。你瞧，还有拿着书的，可惜不是文人，是失去文人风骨与气节的“文人”。</p>
+<p>  ：“进城。”陈黄脸气势宏伟的说。</p>
+<p>  县衙里:</p>
+<p>  ：“接下来，老六样，喝酒，收税，剿匪，判案，分税，远走高飞。”陈黄脸说。</p>
+<p>  李府内：</p>
+<p>  ：“老爷，县长进城了。”李曹脸附在李老爷耳旁说。</p>
+<p>  ：“老三样，请客，收税，赶人。”李老爷说。</p>
+<p>  ：“老爷，白老爷那还要吗？”李曹脸问。</p>
+<p>  ：“老五样，送匪，断路，收钱，剿匪，送钱。”在李老爷右旁的李白脸说。</p>
+<p>  民国五年七月二日：</p>
+<p>  县衙门口：</p>
+<p>  李嵩脸带着两位李府家丁站在门外，只见李嵩脸先是拿起冤鼓棒随意且用力的敲了两下满是藤蔓缠绕的冤鼓后，便丢下冤鼓棒在地，大步走进县衙里。</p>
+<p>  陈黄脸看到这一幕后，便叫来拿着洋枪的那些弟兄们说：“暗围李，东，白三府。“陈黄脸说完这话后又叫来万灰脸说：“赶在李府的人去之前去白府。”陈黄脸和万灰脸交代完后，便走出大堂笑着对李嵩脸说：“敲冤鼓这么响，那必定是有大冤。”</p>
+<p>  ：“没冤，我家老爷给你封信，请县长您明日去宅邸吃一顿。”李嵩脸说</p>
+<p>  ：“去吃一顿？行，好，我陈某必定早到。”陈黄脸笑着说。</p>
+<p>  ：“不用早到，晚到都行。”李嵩脸笑着说完后便带着两李府的家丁走了。</p>
+<p>  县衙内：</p>
+<p>  ：“鸿门宴，必须去。”马黑脸说。</p>
+<p>  ：“去，一定去，但是要怎么去，是去，是问，是打，还是聊。”陈黄脸说。</p>
+<p>  ：“自然是去，聊不出结果的。”马黑脸说。</p>
+<p>  白府门口：</p>
+<p>  ：“诶，帮忙告诉一下你家老爷，县长叫我来看看你家老爷。”万灰脸说。</p>
+<p>  白府中堂：</p>
+<p>  ：“让他进来”白老爷说。</p>
+<p>  白府外：</p>
+<p>  ：“万老爷请进。”白府家丁说。</p>
+<p>  万灰脸听后便大大方方的走进白府。</p>
+<p>  白府内：</p>
+<p>  白老爷迎面而笑的走来，对万灰脸说：“早就听说万先生大名，果然不凡。来，请。”</p>
+<p>  ：“白老爷见笑了，请。”万灰脸笑着说。</p>
+<p>  两人寒暄一阵后，走进白府中堂内，万灰脸说：“不愧是当地老爷，瞧这木，上等品啊。”</p>
+<p>  白老爷听后，边笑边说：“万先生不必寒暄，有事说事哈。”</p>
+<p>  万灰脸听后就笑着说……</p>
+<p>  两个时辰后：</p>
+<p>  ：“那就这样啊，再会啊……”万灰脸笑着说。</p>
+<p>  县衙内：</p>
+<p>  ：“老万回来啦，怎么，那白寇新怎么说？”陈黄脸问。</p>
+<p>  ：“白寇新说不。”万灰脸回。</p>
+<p>  陈黄脸听到这话后，便想了想后说：“得，今晚我和老马去鸿门宴，你在县衙呆着，可能后半夜会有人来找你。”</p>
+<p>  酉时一刻钟：</p>
+<p>  陈黄脸和马黑脸一人骑一匹马骑向李府。</p>
+<p>  ：“老马，这路够烂的啊。”陈黄脸说。</p>
+<p>  ：“是够烂的，这段路大概是烂了多年了，比我们进城时那种好路，差远了。”马黑脸说。</p>
+<p>  ：“是啊，实在是烂，可惜修不了。”陈黄脸说。</p>
+<p>  两人骑了两刻钟这样，到了李府。</p>
+<p>  李府内：</p>
+<p>  ：“老爷，县长到了。”李曹脸说</p>
+<p>  ：“走，去会会这新县长。”李老爷说完便和，李曹脸到李府门口迎接县长。</p>
+<p>  李府门口：</p>
+<p>  ：“县长大驾光临我李宅，接待不周，请勿怪罪，请进。”李老爷说。</p>
+<p>  陈黄脸听完便走进李府，边走边说：“李老爷这真够远的啊。我和老马两人骑两刻钟这样才刚刚到，特别是来李宅这段路，那烂的，真的不堪入目，马蹄子都陷下去几次，难以拔出。”</p>
+<p>  ：“县长要是嫌路烂，可以修，县长请上楼。”李老爷说。</p>
+<p>  ：“各位老爷请。”李曹脸说。</p>
+<p>  李府楼上：</p>
+<p>  ：“陈某这县长买来的。”陈黄脸说。</p>
+<p>  ：“买官就是为了挣钱。”马黑脸说。</p>
+<p>  ：“要挣多少？”李老爷问。</p>
+<p>  ：“是要挣麻匪的钱还是要挣百姓的钱？”李老爷见没人回话，继续往下问。</p>
+<p>  ：“都要挣。”马黑脸乐呵着说。</p>
+<p>  ：“不仅要挣百姓麻匪的钱，还要挣官府的钱。”陈黄脸说</p>
+<p>  ：“挣自己的钱？”李老爷故意问。</p>
+<p>  ：“李老爷说的对！是！挣官府的钱！”马黑脸故意说。</p>
+<p>  ：“那要怎么挣自己的钱？”李老爷故意问。</p>
+<p>  ：“怎么挣？很简单，切胳膊断腿断手脚喂。”陈黄脸边笑边说。</p>
+<p>  ：“切胳膊断腿断手脚？悲啊。县长都沦落到这步田地了？”李老爷故意说。</p>
+<p>  ：“那还是要看李老爷肯出多少。”陈黄脸回答道。</p>
+<p>  ：“出得多，就不用让县长断胳膊断腿断手脚了。”马黑脸笑着附和说。</p>
+<p>  李老爷听完故意大笑着说：“县长要多少？随便拿。”</p>
+<p>  ：“我不是土匪，县长挣钱，总该从百姓身上挣。”陈黄脸说。</p>
+<p>  ：“从百姓身上挣的。县长和老爷二八分。”马黑脸说。</p>
+<p>  ：“二八分不行。怎么着也得七三分。”李老爷说。</p>
+<p>  ：“七三分？那敢情好啊。”马黑脸说。</p>
+<p>  ：“七三分？这怎么行，怎么着也得四六分啊。”陈黄脸说。</p>
+<p>  马黑脸听到陈黄脸这话糊涂又不糊涂的看向陈黄脸后，陈黄脸说：“人家李老爷为这事忙前忙后，你就分人家三成？”</p>
+<p>  ：“县长果然够意思，真可谓是，好匪。”李老爷说。</p>
+<p>  李老爷见没人说话，又笑着说：“两位先吃，李某有事，先失陪一会。”李老爷说完这话，便走向李府一楼的偏房，并跟曹脸说：“你带几人去县衙，记住，别死了。再叫白脸把围我们的人给杀了。”说完后，李老爷便回到二楼。</p>
+<p>  县衙内：</p>
+<p>  ：“算着时间，应该快来了。”万灰脸暗自低声的说。</p>
+<p>  ：“三桶，你去叫几人围好县衙。”万灰脸叫来三桶说。</p>
+<p>  县衙外：</p>
+<p>  李曹脸骑着好马带着几位李府家丁，无任何请示的从后门进县衙。</p>
+<p>  进到县衙后，李曹脸点起煤灯坐下对万灰脸说……</p>
+<p>  李府外：</p>
+<p>  ：“老爷叫把在宅外几人枪杀。“李白脸说。</p>
+<p>  ：“枪杀？那就是火拼？”一位李府家丁问。</p>
+<p>  ：“是。一个活口都不留……”李白脸说完，便带着几人半蹲慢步走到那几人后方。</p>
+<p>  “砰……”只听见几声枪响，打死几人后。那群围李府的反应了过来。：“开枪。”五万说。“砰碰……”只听见洋枪一响。</p>
+<p>  ：“这洋枪就是好用，这老陈哪搞来的？好使的很啊。”三万边开枪边说到。</p>
+<p>  ：“二万！记得……”三万被枪击后没说完话便……</p>
+<p>  ：“三弟你……”二万没说完便死了……</p>
+<p>  ：“打！一个活口都不能留。”李白脸边说边丢了颗雷过去。“砰轰砰”雷炸了……人死了……墙倒了。</p>
+<p>  李府内：</p>
+<p>  ：“这外面怎么这么响啊？”马黑脸问。</p>
+<p>  ：“是枪声，枪响人死。”陈黄脸说。</p>
+<p>  ：“是！是枪声，枪响了，我墙塌了。”李老爷问。</p>
+<p>  ：“炸的吧。”陈黄脸说。</p>
+<p>  ：“这时候也不晚了，我和老马先回了。”陈黄脸见李老爷不说话，便说。</p>
+<p>  ：“县长走好。”李老爷说。</p>
+<p>  李府外：</p>
+<p>  陈黄脸和马黑脸，骑着马边走边说：“老马啊，你说今天枪斗是谁赢了？”</p>
+<p>  ：“我看是李康德赢了，你说你，干嘛捞完百姓的，还要去捞士绅的，怎么这么贪。”马黑脸说。</p>
+<p>  陈黄脸听后自信的呵呵一笑</p>
+<p>  ：“注意就好，毕竟，这场酒我们是文败武负。”马黑脸说。</p>
+<p>  两人大概骑了两刻钟回到县衙。</p>
+<p>  ：“老万啊，那人跟你说了什么？”陈黄脸问。</p>
+<p>  ：“就说了，我们两方最好是三七分。”万灰脸语气平淡又笑着说。</p>
+<p>  民国五年七月三日：</p>
+<p>  万灰脸日常出县衙门口走走逛逛时，看见陈单筋在砍冤鼓上的藤蔓，万灰脸上前去说：“诶欸诶！砍什么砍，这鼓从道光年间就没人敲了，你这一砍，指不定有多大冤！别砍了，别砍了。”</p>
+<p>  ：“我爹说了，无冤鼓判不了案，无案判不了冤。”陈单筋说。</p>
+<p>  万灰脸听后，心中想：“得了，看来老陈是真要他这干儿子去探路了，想救都救不了啊。可惜了。”</p>
+<p>  ：“得了，那你砍你的，我收税去。”万灰脸说。</p>
+<p>  一个时辰后。三人，士绅，百姓，来到县广场上。</p>
+<p>  陈黄脸站在台上，提着声大喊：“我，本县新任县长，代表北洋政府募捐出城剿匪费，和，提前收取，民国四十年到民国四十三年的各项税收。此次税，可用粮顶银。”</p>
+<p>  ：“延康城白宅，代表白老爷捐白银九万两。”白府家丁说。</p>
+<p>  ：“延康城东宅，代表栋老爷捐白银十万两。”东府家丁说。</p>
+<p>  ：“延康城李院，代表李老爷捐袁大头四千四百角和白银一万两。”李府家丁说。</p>
+<p>  ：“各位……父老乡亲，各位!文人墨客们，我代表县政府从明日起，出城剿匪。”陈黄脸嘶喊着。</p>
+<p>  ：“各位父老乡亲们，有人说，出城剿匪干嘛啊，你想啊，你唱着歌喝着酒带着货出城，突然就被麻匪劫了。多悲啊，凄啊，冷啊，惨啊。”万灰脸卖力的喊着。</p>
+<p>  ：“得了，我们现在请最大的麻匪受害者，李老爷，黄老爷上来说两句。</p>
+<p>  李老爷走上台喊着：“麻匪任何时候都要剿，不剿匪不行啊，就像前几天，我叫人运批货出城，突然就被麻匪劫了，血本无归啊。”</p>
+<p>  黄老爷也走上台喊着：“麻匪啊，必须剿，不剿必成大患啊，就像之前，我家财万贯，突然就被做慈善了。现在我是身上没几元，只能维持生活，我都不能叫老爷了！该叫乞丐了！”台下百姓听完后大笑。</p>
+<p>  台下百姓议论着：“剿匪？新鲜，前几任都是收税就跑，这个还剿匪，新鲜啊。”</p>
+<p>  县衙内：</p>
+<p>  马黑脸边玩着银子，边说：“收这么多，我们大概能拿个七八万两白银吧。”</p>
+<p>  ：“不！全拿！”万灰脸边玩着银子边笑着说。</p>
+<p>  ：“对！全拿！”陈黄脸说。</p>
+<p>  ：“怎么全拿？”马黑脸明知故问。</p>
+<p>  ：“出城剿匪，反被匪剿。”陈黄脸说。</p>
+<p>  ：“那谁是匪？”万灰脸问。</p>
+<p>  ：“老规矩，你是匪，我们是官。”陈黄脸说。</p>
+<p>  ：“单筋是死人。”马黑脸补上说。</p>
+<p>  ：“好，那我是带万子，还是筒子。”万灰脸问。</p>
+<p>  ：“万子都被打完了，哪来的万子，带东南西北中鸟发板。”陈黄脸说。</p>
+<p>  :“但万子还是要带，至于这么带？才是问题，而筒子自然我带。”陈黄脸又说。</p>
+<p>  万灰脸听后明白了也沉默了……</p>
+<p>  李府内：</p>
+<p>  ：“曹脸，你去叫白脸带麻匪劫官匪。”李老爷说。</p>
+<p>  ：“老爷，那带哪些人？”曹脸故意问。</p>
+<p>  ：“带东南西北发中鸟板？”李老爷问……</p>
+<p>  民国五年七月四日：</p>
+<p>  ：“走！出城！剿匪！”陈黄脸带着兵和银子走出城外。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="iconfont icon-user-circle"></i>文章作者: </span><span class="post-copyright-info"><a href="https://yesandnoandperhaps.cn">李岚霏</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="iconfont icon-share-square"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yesandnoandperhaps.cn/posts/8be819c2.html">https://yesandnoandperhaps.cn/posts/8be819c2.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="iconfont icon-exclamation-circle"></i>版权声明: </span><span class="post-copyright-info">CC BY-NC-ND 4.0</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%96%87%E5%AD%A6/">文学</a><a class="post-meta__tags" href="/tags/%E5%8F%99%E4%BA%8B/">叙事</a></div><div class="post-share"><div class="social-share" data-image="/img/app_ic-playstore.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/c6f6ba90.html" title="荒乱-第三章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">荒乱-第三章</div></div><div class="info-2"><div class="info-item-1">民国五年七月四日：</div></div></div></a><a class="pagination-related" href="/posts/bbfef51a.html" title="荒乱-第一章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">荒乱-第一章</div></div><div class="info-2"><div class="info-item-1">民国五年，清政府刚灭亡几年，袁世凯刚死一个月，南方地区。</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/bbfef51a.html" title="荒乱-第一章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-25</div><div class="info-item-2">荒乱-第一章</div></div><div class="info-2"><div class="info-item-1">民国五年，清政府刚灭亡几年，袁世凯刚死一个月，南方地区。</div></div></div></a><a class="pagination-related" href="/posts/9771472f.html" title="荒乱-第十一章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十一章</div></div><div class="info-2"><div class="info-item-1">万灰脸等人：（民国五年七月九日中午）</div></div></div></a><a class="pagination-related" href="/posts/a767abf7.html" title="荒乱-第十二章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十二章</div></div><div class="info-2"><div class="info-item-1">李风岚说：“自然厉害，带哥哥进去吧。”</div></div></div></a><a class="pagination-related" href="/posts/a1df762c.html" title="荒乱-第十章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十章</div></div><div class="info-2"><div class="info-item-1">万灰脸等人：（民国五年七月九日）</div></div></div></a><a class="pagination-related" href="/posts/5d5411c0.html" title="荒乱-第十四章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十四章</div></div><div class="info-2"><div class="info-item-1">万灰脸等人：（民国五年七月十日早）</div></div></div></a><a class="pagination-related" href="/posts/32cad487.html" title="荒乱-第十五章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十五章</div></div><div class="info-2"><div class="info-item-1">万灰脸接着话茬喊道：“是，没变。”</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/app_ic-playstore.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">yesandnoandperhaps</div><div class="author-info-description">一个文学网站，收集各种今人所写文章，欢迎向我们投稿！</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">207</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">49</div></a></div><a id="card-info-btn" href="/submission/"><i class="iconfont icon-edit"></i><span>投稿</span></a></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/28c184f4.html" title="粉嫩色">粉嫩色</a><time datetime="2025-01-19T04:26:39.031Z" title="发表于 2025-01-19 12:26:39">2025-01-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/dcd6a765.html" title="亲昵地靠近着你">亲昵地靠近着你</a><time datetime="2025-01-10T04:28:17.837Z" title="发表于 2025-01-10 12:28:17">2025-01-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/ebda9c43.html" title="夜间（其四）">夜间（其四）</a><time datetime="2025-01-05T06:53:09.334Z" title="发表于 2025-01-05 14:53:09">2025-01-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/5cf78526.html" title="夜间（其三）">夜间（其三）</a><time datetime="2025-01-05T06:51:02.049Z" title="发表于 2025-01-05 14:51:02">2025-01-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/11e92674.html" title="夜间（其二）">夜间（其二）</a><time datetime="2025-01-05T06:50:09.338Z" title="发表于 2025-01-05 14:50:09">2025-01-05</time></div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(45deg, #5F9EA0, #4682B4, #B0C4DE);"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By yesandnoandperhaps</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">随随便便，吃饭重要</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="iconfont icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="iconfont icon-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="iconfont icon-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="iconfont icon-cog"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="iconfont icon-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="iconfont icon-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+  const option = null
+
+  const commentCount = n => {
+    const isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+    if (isCommentCount) {
+      isCommentCount.textContent= n
+    }
+  }
+
+  const initGitalk = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGitalk = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const gitalk = new Gitalk({
+      clientID: 'Ov23lihL8rs6IRv6eu2M',
+      clientSecret: '82f5099f7b8f3417a12e29146aec687270b8ce20',
+      repo: 'talk',
+      owner: 'yesandnoandperhaps',
+      admin: ['yesandnoandperhaps'],
+      updateCountCallback: commentCount,
+      ...option,
+      id: isShuoshuo ? path : (option && option.id) || 'ca089a20dcc151160fff1c1da889d847'
+    })
+
+    gitalk.render('gitalk-container')
+  }
+
+  const loadGitalk = async(el, path) => {
+    if (typeof Gitalk === 'function') initGitalk(el, path)
+    else {
+      await btf.getCSS('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css')
+      await btf.getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js')
+      initGitalk(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Gitalk' === 'Gitalk'
+      ? window.shuoshuoComment = { loadComment: loadGitalk }
+      : window.loadOtherComment = loadGitalk
+    return
+  }
+
+  if ('Gitalk' === 'Gitalk' || !true) {
+    if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+    else loadGitalk()
+  } else {
+    window.loadOtherComment = loadGitalk
+  }
+})()</script></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

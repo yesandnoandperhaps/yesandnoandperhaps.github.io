@@ -1,0 +1,621 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>寒妖 | yesandnoandperhaps</title><meta name="author" content="yesandnoandperhaps"><meta name="copyright" content="yesandnoandperhaps"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="寒祅祸九域，道士难求雨。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="寒妖">
+<meta property="og:url" content="https://yesandnoandperhaps.cn/posts/5c6d35af.html">
+<meta property="og:site_name" content="yesandnoandperhaps">
+<meta property="og:description" content="寒祅祸九域，道士难求雨。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yesandnoandperhaps.cn/img/app_ic-playstore.png">
+<meta property="article:published_time" content="2024-05-27T06:00:00.000Z">
+<meta property="article:modified_time" content="2024-12-13T16:54:26.138Z">
+<meta property="article:author" content="yesandnoandperhaps">
+<meta property="article:tag" content="文学">
+<meta property="article:tag" content="叙事">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yesandnoandperhaps.cn/img/app_ic-playstore.png"><link rel="shortcut icon" href="/img/app_ic-playstore.png"><link rel="canonical" href="https://yesandnoandperhaps.cn/posts/5c6d35af.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="ZuYbeLlz0J2QqXmvKFgg8Wkdre5brSTAZ0cECCRH5lo"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+          
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?398d89cac0389320ea3fd7267c57be63";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":-1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'medium_zoom',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '寒妖',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="//at.alicdn.com/t/c/font_4736746_gtskvoymabk.css"><link rel="stylesheet" href="/css/fonts.css"><link rel="stylesheet" href="/css/center-circle.css"><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/yesandnoandperhaps.xml" title="yesandnoandperhaps" type="application/atom+xml">
+</head><body><!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>/* 引入思源宋体字体 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap');
+
+/* 渐变动画 */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 渐变加载器样式 */
+.gradient-loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Serif SC', serif;  /* 使用思源宋体 */
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #5F9EA0, #4682B4, #B0C4DE);
+  background-size: 300% 300%;
+  animation: gradientAnimation 3s ease infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* 默认隐藏样式 */
+.gradient-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* 文本样式 */
+.loader-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+/* 动画效果，文本上下滑动 */
+.loader-text::after {
+  content: '正在加载...';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slide 3s ease-in-out infinite;
+  font-size: 1.5rem;
+}
+
+/* 滑动动画 */
+@keyframes slide {
+  0% { top: 150%; opacity: 0; }
+  50% { top: 100%; opacity: 1; }
+  100% { top: 150%; opacity: 0; }
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .gradient-loader {
+    font-size: 1.5rem;
+  }
+  .loader-text::after {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gradient-loader {
+    font-size: 1rem;
+  }
+  .loader-text::after {
+    font-size: 0.8rem;
+  }
+}</style></head><body><div class="gradient-loader" id="loading-box"><div class="loader-text">yesandnoandperhaps</div></div><script>const preloader = (() => {
+  const loadingBox = document.getElementById('loading-box');
+  return {
+    endLoading: () => {
+      if (!loadingBox) return;
+      document.body.style.overflow = 'auto'; // 恢复滚动
+      loadingBox.classList.add('hidden'); // 隐藏加载动画
+    },
+    initLoading: () => {
+      if (!loadingBox) return;
+      document.body.style.overflow = 'hidden'; // 禁止滚动
+      loadingBox.classList.remove('hidden'); // 显示加载动画
+    }
+  };
+})();
+
+const manageLoadingTimeout = (() => {
+  let timeoutID;
+  const handleTimeout = () => {
+    preloader.endLoading(); // 超时后直接结束加载动画
+    clearTimeout(timeoutID);
+  };
+
+  return {
+    start: (duration = 1800) => {
+      timeoutID = setTimeout(handleTimeout, duration);
+    },
+    clear: () => {
+      clearTimeout(timeoutID);
+    }
+  };
+})();
+
+// 初始化加载动画
+preloader.initLoading();
+manageLoadingTimeout.start();
+
+// 页面加载完成后隐藏加载动画并清除超时
+window.addEventListener('load', () => {
+  try {
+    manageLoadingTimeout.clear();
+    preloader.endLoading();
+  } catch (error) {
+    console.error('Error during loading cleanup:', error);
+  }
+});</script></body></html><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/app_ic-playstore.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">207</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">49</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-folder"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw iconfont icon-widgets"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-tag"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/contribute/"><i class="fa-fw iconfont icon-clipboard-check"></i><span> 投稿要求</span></a></div><div class="menus_item"><a class="site-page" href="/submission/"><i class="fa-fw iconfont icon-edit"></i><span> 投稿</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-users"></i><span> 关于与创作者</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/img/寒妖.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">yesandnoandperhaps</span></a><a class="nav-page-title" href="/"><span class="site-name">寒妖</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="iconfont icon-search"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-folder"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw iconfont icon-widgets"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-tag"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/contribute/"><i class="fa-fw iconfont icon-clipboard-check"></i><span> 投稿要求</span></a></div><div class="menus_item"><a class="site-page" href="/submission/"><i class="fa-fw iconfont icon-edit"></i><span> 投稿</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-users"></i><span> 关于与创作者</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="iconfont icon-bars"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">寒妖</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="iconfont icon-calendar-alt"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-05-27T06:00:00.000Z" title="发表于 2024-05-27 14:00:00">2024-05-27</time><span class="post-meta-separator">|</span><i class="iconfont icon-history"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-13T16:54:26.138Z" title="更新于 2024-12-14 00:54:26">2024-12-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E6%96%87%E5%AD%A6/">文学</a><i class="iconfont icon-angle-right"></i><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E6%96%87%E5%AD%A6/%E7%A5%85%E4%BA%8B%E4%B9%A6%E8%AE%B0/">祅事书记</a><i class="iconfont icon-angle-right"></i><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E4%BD%9C%E8%80%85/">作者</a><i class="iconfont icon-angle-right"></i><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E4%BD%9C%E8%80%85/%E6%9D%8E%E5%B2%9A%E9%9C%8F/">李岚霏</a><i class="iconfont icon-angle-right"></i><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E6%96%87%E5%AD%A6/%E7%A5%85%E4%BA%8B%E4%B9%A6%E8%AE%B0/%E5%A6%96%E9%AC%BC/">妖鬼</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="iconfont icon-file-word"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.3k</span><span class="post-meta-separator">|</span><i class="iconfont icon-clock"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="iconfont icon-eye"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><link rel="stylesheet external nofollow noreferrer" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><hr>
+<p>  寒祅祸九域，</p>
+<p>  道士难求雨，</p>
+<p>  玉帝难下雨，</p>
+<p>  龙王一下雨，</p>
+<p>  雨水成冰雹，</p>
+<p>  雨水成白雪，</p>
+<p>  冰雹砸万物，</p>
+<p>  土屋成废墟，</p>
+<p>  废墟白雪埋。</p>
+<p>  日升月落几千回，</p>
+<p>  万里无人烟，</p>
+<p>  皇家无存粮，</p>
+<p>  两步一白骨，</p>
+<p>  遍地是残魂。</p>
+<p>  月升日落几千回，</p>
+<p>  也曾请道士，</p>
+<p>  亡了这妖物，</p>
+<p>  千冰化千剑，</p>
+<p>  只见道士去奈河。</p>
+<p>  千愿堆天庭，</p>
+<p>  都是除妖愿，</p>
+<p>  玉帝令天兵，</p>
+<p>  玉帝令天将，</p>
+<p>  下凡除妖物。</p>
+<hr>
+<p>  天兵至尘寰，</p>
+<p>  冰锥刺兵身，</p>
+<p>  倒下无数人。</p>
+<p>  天将至尘寰，</p>
+<p>  使那防寒术，</p>
+<p>  不见那妖物。</p>
+<p>  寒风化长剑，</p>
+<p>  刺入天将心，</p>
+<p>  将身不见了，</p>
+<p>  只见白骨山，</p>
+<p>  只剩千银甲，</p>
+<p>  只剩十金甲。</p>
+<hr>
+<p>  万年前寒妖，</p>
+<p>  本是一凡人，</p>
+<p>  家中有一妻，</p>
+<p>  家中有二子，</p>
+<p>  可谓幸福又快乐，</p>
+<p>  可惜天不养，</p>
+<p>  朝中又不理，</p>
+<p>  县太爷荒谬。</p>
+<hr>
+<p>  北边战事起，</p>
+<p>  俩子服兵役，</p>
+<p>  战死在边疆，</p>
+<p>  我去官府问抚恤，</p>
+<p>  县太爷说我假报，</p>
+<p>  打了三十板，</p>
+<p>  屁股鲜血流，</p>
+<p>  持拐回家中，</p>
+<p>  抱我妻子痛哭起。</p>
+<hr>
+<p>  苦过几年至年老，</p>
+<p>  暵妖袭九域，</p>
+<p>  丰年无粮草，</p>
+<p>  灾年无灾粮，</p>
+<p>  我等叫苦无人应，</p>
+<p>  有随亲人奔京城，</p>
+<p>  以为京城有灾粮，</p>
+<p>  可取一样是无粮，</p>
+<p>  幸亏市场有菜买，</p>
+<p>  逃灾众人凑银两，</p>
+<p>  萝卜白菜皆空空。</p>
+<hr>
+<p>  官员见到众灾民，</p>
+<p>  不问缘由赶出城，</p>
+<p>  皇帝早朝问灾事，</p>
+<p>  众官伪造太平样。</p>
+<hr>
+<p>  到那城墙边，</p>
+<p>  饥寒交迫啊，</p>
+<p>  只好冒险抢粮草。</p>
+<p>  空手空拳抢民众，</p>
+<p>  我也是民众，</p>
+<p>  可惜无活路，</p>
+<p>  官府见后派兵平，</p>
+<p>  堂堂首都鲜血染，</p>
+<p>  皇城还是盛世样，</p>
+<p>  皇帝日日听谄言，</p>
+<p>  臣子日日献魅言，</p>
+<p>  君臣真是一心同。</p>
+<hr>
+<p>  灾民还在流鲜血，</p>
+<p>  民众还在失财务，</p>
+<p>  官府还在扫大街，</p>
+<p>  皇上还在坐龙椅。</p>
+<hr>
+<p>  灾民与兵斗，</p>
+<p>  开始是空拳，</p>
+<p>  后来持甲又持刀，</p>
+<p>  闯九门，</p>
+<p>  被兵拦，</p>
+<p>  皇帝知，</p>
+<p>  斩了几命官，</p>
+<p>  禁军平乱民，</p>
+<p>  发了救灾粮，</p>
+<p>  乱民不再乱。</p>
+<hr>
+<p>  我等至金殿，</p>
+<p>  帝问我等为何乱，</p>
+<p>  帝问我等为何来，</p>
+<p>  命官不管当地事？</p>
+<p>  我等不屑又怨道，</p>
+<p>  灾年谁管百姓死？</p>
+<p>  他报灾情无人应，</p>
+<p>  他连自己都难保，</p>
+<p>  一家老小快饿死，</p>
+<p>  县兵快要掀县衙，</p>
+<p>  士绅贵族家，</p>
+<p>  皆被灾民闹，</p>
+<p>  与那难民无差异。</p>
+<p>  帝终醒，</p>
+<p>  不在沉迷这盛世。</p>
+<hr>
+<p>  我与相亲离，</p>
+<p>  回到小县城，</p>
+<p>  继耕种，</p>
+<p>  还和从前无异样。</p>
+<hr>
+<p>  七月初一鬼门开，</p>
+<p>  七月十四鬼乱窜，</p>
+<p>  一风吹富国，</p>
+<p>  我见粮飘走，</p>
+<p>  追向那粮草，</p>
+<p>  边追边呐喊，</p>
+<p>  回来啊，</p>
+<p>  妖风又祸人！</p>
+<p>  道士见，</p>
+<p>  往前追，</p>
+<p>  竟难碰到这妖风，</p>
+<p>  道士惊叹言，</p>
+<p>  怕是鬼风啊。</p>
+<hr>
+<p>  摆起八卦阵，</p>
+<p>  手持桃木剑，</p>
+<p>  引雨又引雷，</p>
+<p>  却未打到那鬼风。</p>
+<hr>
+<p>  兹国真是穷，</p>
+<p>  人人贪心起，</p>
+<p>  人人穿破布，</p>
+<p>  帝王吃稀饭。</p>
+<hr>
+<p>  一波未平又一起，</p>
+<p>  鬼风刚刚走，</p>
+<p>  又至寒冬节，</p>
+<p>  天降白雪脉黄土，</p>
+<p>  灾粮发不来，</p>
+<p>  县爷都饿着。</p>
+<hr>
+<p>  乡亲一同去打猎，</p>
+<p>  见那鹿在雪中跑，</p>
+<p>  如同见到了活路，</p>
+<p>  长矛一丢众人扑。</p>
+<p>  鹿血染雪原，</p>
+<p>  一朵红花血中显。</p>
+<hr>
+<p>  吃那鹿肉好，</p>
+<p>  乡里无人饿，</p>
+<p>  就连那财主，</p>
+<p>  都与乡民坐，</p>
+<p>  众人齐心过灾年，</p>
+<p>  此乡其乐融融相…</p>
+<hr>
+<p>  两月过，</p>
+<p>  寒风还在吹，</p>
+<p>  方圆百里早无食。</p>
+<hr>
+<p>  瞧那孩童面黄样，</p>
+<p>  他们不在欢天跑，</p>
+<p>  朝阳样入白雪中，</p>
+<p>  不见孩童的笑容。</p>
+<hr>
+<p>  手捧白雪食白雪，</p>
+<p>  手捧观音土，</p>
+<p>  放入口中食，</p>
+<p>  胀死人无数。</p>
+<hr>
+<p>  救苦救难观世音，</p>
+<p>  果然苦难全不救，</p>
+<p>  日日供那观世音，</p>
+<p>  却是不保我人命，</p>
+<p>  还是要靠自己活，</p>
+<p>  可惜命不好，</p>
+<p>  可惜可惜啊。</p>
+<hr>
+<p>  倒在家门前，</p>
+<p>  白雪埋我尸，</p>
+<p>  妻儿抱我尸，</p>
+<p>  诉说着一切。</p>
+<hr>
+<p>  我魂飘啊飘，</p>
+<p>  被那寒风浸，</p>
+<p>  人魂融寒风，</p>
+<p>  成了一妖身，</p>
+<p>  带那寒风离，</p>
+<p>  乡民又见光，</p>
+<p>  可惜妻儿也离去，</p>
+<p>  在这世间无依靠。</p>
+<hr>
+<p>  回到万年后，</p>
+<p>  实在饿得不成样，</p>
+<p>  只好出山寻吃食，</p>
+<p>  却被当作祸九域，</p>
+<p>  虽是寻了一二年，</p>
+<p>  但也为了存够食，</p>
+<p>  才做如此事，</p>
+<p>  尔等却告天，</p>
+<p>  天人有众供，</p>
+<p>  我等有何供？</p>
+<hr>
+<p>  天庭上，</p>
+<p>  玉帝听败绩，</p>
+<p>  三分怒火冲，</p>
+<p>  派那火德真君去，</p>
+<hr>
+<p>  天色红，</p>
+<p>  天火落尘寰，</p>
+<p>  不比寒妖差。</p>
+<hr>
+<p>  天刮一寒风，</p>
+<p>  试图冰火天，</p>
+<p>  冰融水，</p>
+<p>  水成冰，</p>
+<p>  火势大又小，</p>
+<p>  天下更痛苦，</p>
+<p>  一会下寒雨，</p>
+<p>  一会下火苗，</p>
+<p>  一会下寒霜，</p>
+<p>  瞧那小孩童，</p>
+<p>  死在原野中，</p>
+<p>  手握风筝却不飞，</p>
+<p>  火苗燃尽万里草，</p>
+<p>  孩童尸体成了灰。</p>
+<p>  寒妖眼流泪，</p>
+<p>  泪成冰雹落，</p>
+<p>  寒妖在哪都是灾，</p>
+<p>  火神爷见火难压，</p>
+<p>  吸起凡间草木土，</p>
+<p>  火势又大几重天，</p>
+<p>  如同九日又回来，</p>
+<p>  瞧那猪牛香气飘，</p>
+<p>  瞧那冰山雪融化，</p>
+<p>  热水灌满黄河水，</p>
+<p>  热水灌满长江水，</p>
+<p>  鱼虾皆在水里熟，</p>
+<p>  寒妖见后心不忍，</p>
+<p>  取出丹心丢上天，</p>
+<p>  烈火红云尽消散，</p>
+<p>  世间还有几条命，</p>
+<p>  真身化作一滩雪，</p>
+<p>  附在一坐高山上。</p>
+<hr>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="iconfont icon-user-circle"></i>文章作者: </span><span class="post-copyright-info"><a href="https://yesandnoandperhaps.cn">李岚霏</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="iconfont icon-share-square"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yesandnoandperhaps.cn/posts/5c6d35af.html">https://yesandnoandperhaps.cn/posts/5c6d35af.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="iconfont icon-exclamation-circle"></i>版权声明: </span><span class="post-copyright-info"><a href="https://yesandnoandperhaps.cn/" target="_blank">未经原作者许可，不可转载。</a></span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%96%87%E5%AD%A6/">文学</a><a class="post-meta__tags" href="/tags/%E5%8F%99%E4%BA%8B/">叙事</a></div><div class="post-share"><div class="social-share" data-image="/img/app_ic-playstore.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/2d595325.html" title="地府体系介绍"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">地府体系介绍</div></div><div class="info-2"><div class="info-item-1">地府体系介绍</div></div></div></a><a class="pagination-related" href="/posts/8740294d.html" title="殣鬼"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">殣鬼</div></div><div class="info-2"><div class="info-item-1">小村庄，因暵气，家家无粮草。</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/bbfef51a.html" title="荒乱-第一章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-25</div><div class="info-item-2">荒乱-第一章</div></div><div class="info-2"><div class="info-item-1">民国五年，清政府刚灭亡几年，袁世凯刚死一个月，南方地区。</div></div></div></a><a class="pagination-related" href="/posts/9771472f.html" title="荒乱-第十一章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十一章</div></div><div class="info-2"><div class="info-item-1">万灰脸等人：（民国五年七月九日中午）</div></div></div></a><a class="pagination-related" href="/posts/a767abf7.html" title="荒乱-第十二章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十二章</div></div><div class="info-2"><div class="info-item-1">李风岚说：“自然厉害，带哥哥进去吧。”</div></div></div></a><a class="pagination-related" href="/posts/a1df762c.html" title="荒乱-第十章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十章</div></div><div class="info-2"><div class="info-item-1">万灰脸等人：（民国五年七月九日）</div></div></div></a><a class="pagination-related" href="/posts/5d5411c0.html" title="荒乱-第十四章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十四章</div></div><div class="info-2"><div class="info-item-1">万灰脸等人：（民国五年七月十日早）</div></div></div></a><a class="pagination-related" href="/posts/32cad487.html" title="荒乱-第十五章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十五章</div></div><div class="info-2"><div class="info-item-1">万灰脸接着话茬喊道：“是，没变。”</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/app_ic-playstore.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">yesandnoandperhaps</div><div class="author-info-description">一个文学网站，收集各种今人所写文章，欢迎向我们投稿！</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">207</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">49</div></a></div><a id="card-info-btn" href="/submission/"><i class="iconfont icon-edit"></i><span>投稿</span></a></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/28c184f4.html" title="粉嫩色">粉嫩色</a><time datetime="2025-01-19T04:26:39.031Z" title="发表于 2025-01-19 12:26:39">2025-01-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/dcd6a765.html" title="亲昵地靠近着你">亲昵地靠近着你</a><time datetime="2025-01-10T04:28:17.837Z" title="发表于 2025-01-10 12:28:17">2025-01-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/ebda9c43.html" title="夜间（其四）">夜间（其四）</a><time datetime="2025-01-05T06:53:09.334Z" title="发表于 2025-01-05 14:53:09">2025-01-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/5cf78526.html" title="夜间（其三）">夜间（其三）</a><time datetime="2025-01-05T06:51:02.049Z" title="发表于 2025-01-05 14:51:02">2025-01-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/11e92674.html" title="夜间（其二）">夜间（其二）</a><time datetime="2025-01-05T06:50:09.338Z" title="发表于 2025-01-05 14:50:09">2025-01-05</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/img/img/寒妖.jpg);"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By yesandnoandperhaps</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">随随便便，吃饭重要</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="iconfont icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="iconfont icon-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="iconfont icon-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="iconfont icon-cog"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="iconfont icon-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="iconfont icon-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+  const option = null
+
+  const commentCount = n => {
+    const isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+    if (isCommentCount) {
+      isCommentCount.textContent= n
+    }
+  }
+
+  const initGitalk = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGitalk = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const gitalk = new Gitalk({
+      clientID: 'Ov23lihL8rs6IRv6eu2M',
+      clientSecret: '82f5099f7b8f3417a12e29146aec687270b8ce20',
+      repo: 'talk',
+      owner: 'yesandnoandperhaps',
+      admin: ['yesandnoandperhaps'],
+      updateCountCallback: commentCount,
+      ...option,
+      id: isShuoshuo ? path : (option && option.id) || '935c75cb75af2db7bb990946d1ee96c6'
+    })
+
+    gitalk.render('gitalk-container')
+  }
+
+  const loadGitalk = async(el, path) => {
+    if (typeof Gitalk === 'function') initGitalk(el, path)
+    else {
+      await btf.getCSS('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css')
+      await btf.getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js')
+      initGitalk(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Gitalk' === 'Gitalk'
+      ? window.shuoshuoComment = { loadComment: loadGitalk }
+      : window.loadOtherComment = loadGitalk
+    return
+  }
+
+  if ('Gitalk' === 'Gitalk' || !true) {
+    if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+    else loadGitalk()
+  } else {
+    window.loadOtherComment = loadGitalk
+  }
+})()</script></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

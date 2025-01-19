@@ -1,0 +1,1020 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>鸿妖 | yesandnoandperhaps</title><meta name="author" content="yesandnoandperhaps"><meta name="copyright" content="yesandnoandperhaps"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一国内，一县内，有位小县令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="鸿妖">
+<meta property="og:url" content="https://yesandnoandperhaps.cn/posts/ab37c9a5.html">
+<meta property="og:site_name" content="yesandnoandperhaps">
+<meta property="og:description" content="一国内，一县内，有位小县令">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yesandnoandperhaps.cn/img/app_ic-playstore.png">
+<meta property="article:published_time" content="2024-05-27T08:00:00.000Z">
+<meta property="article:modified_time" content="2024-12-15T09:34:40.650Z">
+<meta property="article:author" content="yesandnoandperhaps">
+<meta property="article:tag" content="文学">
+<meta property="article:tag" content="叙事">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yesandnoandperhaps.cn/img/app_ic-playstore.png"><link rel="shortcut icon" href="/img/app_ic-playstore.png"><link rel="canonical" href="https://yesandnoandperhaps.cn/posts/ab37c9a5.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="ZuYbeLlz0J2QqXmvKFgg8Wkdre5brSTAZ0cECCRH5lo"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+          
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?398d89cac0389320ea3fd7267c57be63";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":-1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'medium_zoom',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '鸿妖',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="//at.alicdn.com/t/c/font_4736746_gtskvoymabk.css"><link rel="stylesheet" href="/css/fonts.css"><link rel="stylesheet" href="/css/center-circle.css"><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/yesandnoandperhaps.xml" title="yesandnoandperhaps" type="application/atom+xml">
+</head><body><!DOCTYPE html><html lang="zh"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>/* 引入思源宋体字体 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap');
+
+/* 渐变动画 */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 渐变加载器样式 */
+.gradient-loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Serif SC', serif;  /* 使用思源宋体 */
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #5F9EA0, #4682B4, #B0C4DE);
+  background-size: 300% 300%;
+  animation: gradientAnimation 3s ease infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  overflow: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* 默认隐藏样式 */
+.gradient-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* 文本样式 */
+.loader-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+/* 动画效果，文本上下滑动 */
+.loader-text::after {
+  content: '正在加载...';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slide 3s ease-in-out infinite;
+  font-size: 1.5rem;
+}
+
+/* 滑动动画 */
+@keyframes slide {
+  0% { top: 150%; opacity: 0; }
+  50% { top: 100%; opacity: 1; }
+  100% { top: 150%; opacity: 0; }
+}
+
+/* 响应式适配 */
+@media (max-width: 768px) {
+  .gradient-loader {
+    font-size: 1.5rem;
+  }
+  .loader-text::after {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gradient-loader {
+    font-size: 1rem;
+  }
+  .loader-text::after {
+    font-size: 0.8rem;
+  }
+}</style></head><body><div class="gradient-loader" id="loading-box"><div class="loader-text">yesandnoandperhaps</div></div><script>const preloader = (() => {
+  const loadingBox = document.getElementById('loading-box');
+  return {
+    endLoading: () => {
+      if (!loadingBox) return;
+      document.body.style.overflow = 'auto'; // 恢复滚动
+      loadingBox.classList.add('hidden'); // 隐藏加载动画
+    },
+    initLoading: () => {
+      if (!loadingBox) return;
+      document.body.style.overflow = 'hidden'; // 禁止滚动
+      loadingBox.classList.remove('hidden'); // 显示加载动画
+    }
+  };
+})();
+
+const manageLoadingTimeout = (() => {
+  let timeoutID;
+  const handleTimeout = () => {
+    preloader.endLoading(); // 超时后直接结束加载动画
+    clearTimeout(timeoutID);
+  };
+
+  return {
+    start: (duration = 1800) => {
+      timeoutID = setTimeout(handleTimeout, duration);
+    },
+    clear: () => {
+      clearTimeout(timeoutID);
+    }
+  };
+})();
+
+// 初始化加载动画
+preloader.initLoading();
+manageLoadingTimeout.start();
+
+// 页面加载完成后隐藏加载动画并清除超时
+window.addEventListener('load', () => {
+  try {
+    manageLoadingTimeout.clear();
+    preloader.endLoading();
+  } catch (error) {
+    console.error('Error during loading cleanup:', error);
+  }
+});</script></body></html><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/app_ic-playstore.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">207</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">49</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-folder"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw iconfont icon-widgets"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-tag"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/contribute/"><i class="fa-fw iconfont icon-clipboard-check"></i><span> 投稿要求</span></a></div><div class="menus_item"><a class="site-page" href="/submission/"><i class="fa-fw iconfont icon-edit"></i><span> 投稿</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-users"></i><span> 关于与创作者</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: linear-gradient(45deg, #5F9EA0, #4682B4, #B0C4DE);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">yesandnoandperhaps</span></a><a class="nav-page-title" href="/"><span class="site-name">鸿妖</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="iconfont icon-search"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw iconfont icon-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw iconfont icon-folder"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw iconfont icon-widgets"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw iconfont icon-tag"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/contribute/"><i class="fa-fw iconfont icon-clipboard-check"></i><span> 投稿要求</span></a></div><div class="menus_item"><a class="site-page" href="/submission/"><i class="fa-fw iconfont icon-edit"></i><span> 投稿</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw iconfont icon-users"></i><span> 关于与创作者</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="iconfont icon-bars"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">鸿妖</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="iconfont icon-calendar-alt"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-05-27T08:00:00.000Z" title="发表于 2024-05-27 16:00:00">2024-05-27</time><span class="post-meta-separator">|</span><i class="iconfont icon-history"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-15T09:34:40.650Z" title="更新于 2024-12-15 17:34:40">2024-12-15</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E6%96%87%E5%AD%A6/">文学</a><i class="iconfont icon-angle-right"></i><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E6%96%87%E5%AD%A6/%E7%A5%85%E4%BA%8B%E4%B9%A6%E8%AE%B0/">祅事书记</a><i class="iconfont icon-angle-right"></i><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E4%BD%9C%E8%80%85/">作者</a><i class="iconfont icon-angle-right"></i><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E4%BD%9C%E8%80%85/%E6%9D%8E%E5%B2%9A%E9%9C%8F/">李岚霏</a><i class="iconfont icon-angle-right"></i><i class="iconfont icon-inbox"></i><a class="post-meta-categories" href="/categories/%E6%96%87%E5%AD%A6/%E7%A5%85%E4%BA%8B%E4%B9%A6%E8%AE%B0/%E5%A6%96%E9%AC%BC/">妖鬼</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="iconfont icon-file-word"></i><span class="post-meta-label">总字数:</span><span class="word-count">4.2k</span><span class="post-meta-separator">|</span><i class="iconfont icon-clock"></i><span class="post-meta-label">阅读时长:</span><span>11分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="iconfont icon-eye"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><link rel="stylesheet external nofollow noreferrer" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><hr>
+<p>  一国内，</p>
+<p>  一县内，</p>
+<p>  有位小县令，</p>
+<p>  判着一案子，</p>
+<p>  一人跪着言，</p>
+<p>  我定未害那母女，</p>
+<p>  怎能嫁祸到我身？</p>
+<p>  我怒而言道，</p>
+<p>  事到如今还敢辩，</p>
+<p>  如今证据摆眼前，</p>
+<p>  尔等还能如何样，</p>
+<p>  速速来人扛起他，</p>
+<p>  抬至刑场斩下刀。</p>
+<p>  那人言，</p>
+<p>  实在冤枉啊，</p>
+<p>  世间无人可助我？</p>
+<p>  你这糊涂官，</p>
+<p>  糊涂糊涂真葫芦。</p>
+<hr>
+<p>  刑场上，</p>
+<p>  刽子手那刀，</p>
+<p>  实在是锋利，</p>
+<p>  实在不知道</p>
+<p>  那刀斩下几人头？</p>
+<hr>
+<p>  那人被抬至，</p>
+<p>  头放刑台却还喊，</p>
+<p>  冤枉啊，</p>
+<p>  你这葫芦官，</p>
+<p>  判这葫芦案，</p>
+<p>  竟然真是葫芦了。</p>
+<p>  我言道，</p>
+<p>  葫芦不糊涂，</p>
+<p>  阎王自然会问你。</p>
+<p>  那人大笑却不言。</p>
+<hr>
+<p>  突见一人骑一马，</p>
+<p>  手握一张纸，</p>
+<p>  边来边喊道，</p>
+<p>  刑部尚书令，</p>
+<p>  刀下留人回京审。</p>
+<p>  我见此景速丢帽，</p>
+<p>  怒喊道，</p>
+<p>  不必理会速行刑。</p>
+<hr>
+<p>  都伯法刀落，</p>
+<p>  见那拘鬼使，</p>
+<p>  刚想跑，</p>
+<p>  便被钩住魂，</p>
+<p>  走过黄泉路，</p>
+<p>  上不见日月星辰，</p>
+<p>  下不见土地尘埃，</p>
+<p>  前不见阳关大路，</p>
+<p>  后不见亲朋四邻。</p>
+<hr>
+<p>  再到望乡台，</p>
+<p>  一眼望去泪浇石砖。</p>
+<p>  一下望乡台，</p>
+<p>  忽闻狗吠声，</p>
+<p>  一狗扑向我，</p>
+<p>  使我三臂少一臂，</p>
+<p>  再也难做曲中事。</p>
+<hr>
+<p>  后至一凉亭，</p>
+<p>  直跳亭中井。</p>
+<hr>
+<p>  牛头马面叹，</p>
+<p>  本还能转世，</p>
+<p>  自寻死路啊。</p>
+<hr>
+<p>  回到凡间上，</p>
+<p>  那人问县令，</p>
+<p>  刑部尚书令，</p>
+<p>  为何不听言，</p>
+<p>  竟然要如此，</p>
+<p>  只能把你押回京，</p>
+<p>  听候审判了。</p>
+<p>  我言道，</p>
+<p>  此案已判刑，</p>
+<p>  突然来一旨，</p>
+<p>  实在没醒来，</p>
+<p>  这个葫芦案，</p>
+<p>  实在糊涂了，</p>
+<p>  莫要怪罪好？</p>
+<p>  更何况，</p>
+<p>  葫芦案，</p>
+<p>  铁证如山啊，</p>
+<p>  还需再改判？</p>
+<p>  那人言，</p>
+<p>  县令好之为之吧。</p>
+<hr>
+<p>  刑部内，</p>
+<p>  刑部尚书言，</p>
+<p>  此等小县令，</p>
+<p>  竟敢做此事，</p>
+<p>  他怕是不知，</p>
+<p>  那斩之人是皇亲，</p>
+<p>  实在难保这好臣。</p>
+<hr>
+<p>  后宫内，</p>
+<p>  皇后言，</p>
+<p>  皇上啊，</p>
+<p>  冤枉啊。</p>
+<p>  皇上言，</p>
+<p>  有何冤？</p>
+<p>  皇后言，</p>
+<p>  我弟弟死冤，</p>
+<p>  求皇上伸冤。</p>
+<p>  皇上言，</p>
+<p>  帑有何苦尽管言。</p>
+<p>  皇后言，</p>
+<p>  我弟不过偷葫芦，</p>
+<p>  却被那等葫芦官，</p>
+<p>  判了个砍头，</p>
+<p>  实在是冤啊。</p>
+<p>  皇上言，</p>
+<p>  今早朝我定过问，</p>
+<p>  如若真有冤，</p>
+<p>  定是会平反。</p>
+<p>  葫芦官是什么人？</p>
+<p>  皇后言，</p>
+<p>  葫芦官是一县令，</p>
+<p>  南县父母官，</p>
+<p>  仗着南县一把手，</p>
+<p>  才判这等葫芦案。</p>
+<p>  如今平反有何用，</p>
+<p>  人都走了能如何？</p>
+<p>  皇上言，</p>
+<p>  我定将那葫芦官，</p>
+<p>  判个相同葫芦案。</p>
+<p>  皇后言，</p>
+<p>  实在谢皇上。</p>
+<hr>
+<p>  朝堂上，</p>
+<p>  皇上装作怒言道，</p>
+<p>  众爱卿有何需奏？</p>
+<p>  刑部尚书察觉言，</p>
+<p>  臣要参奏一县令，</p>
+<p>  那等县令太葫芦，</p>
+<p>  乱判一案子，</p>
+<p>  使得冤死一好人。</p>
+<p>  皇上言，</p>
+<p>  速速抓来京城审！</p>
+<hr>
+<p>  官兵至南县，</p>
+<p>  擒住那县令，</p>
+<p>  官兵拿出圣旨言，</p>
+<p>  糊涂官判葫芦案，</p>
+<p>  现需糊涂官入京，</p>
+<p>  受刑部审查。</p>
+<hr>
+<p>  脱下官袍坐刑车，</p>
+<p>  离前妻子儿女望，</p>
+<p>  妻子说：“一定要回来。”</p>
+<p>  儿女说：“爹你看，这是我们亲手做的，你拿着，要是想家了就敲敲，神仙会听见传给我们的。”</p>
+<p>  ：“谢谢了，记住，爹不在的时候要听妈妈的话。”</p>
+<p>  儿女说：“知道啦，爹回来时要多陪我们玩哟。”</p>
+<p>  ：“好的。”</p>
+<p>  官兵说：“得了，得了，别谈了，该上路了。”</p>
+<p>  妻子走到官兵旁给了六两银子说：“待他好点。”</p>
+<p>  官兵小声说：“好嘞，夫人，这一路上，我们尽量让他好点。”</p>
+<p>  妻子说：“那就谢谢了。”</p>
+<hr>
+<p>  路途漫长长，</p>
+<p>  坐着这刑车，</p>
+<p>  吐了好几回，</p>
+<p>  幸好官兵待见吾，</p>
+<p>  没有实在太着急，</p>
+<p>  过了数十日，</p>
+<p>  到了那京城，</p>
+<p>  站在刑部上，</p>
+<p>  刑部尚书问，</p>
+<p>  为何不听言？</p>
+<p>  我言道，</p>
+<p>  如若听了言，</p>
+<p>  葫芦案成冤假案，</p>
+<p>  父母官成臭名官，</p>
+<p>  如若未听言，</p>
+<p>  不过是，</p>
+<p>  葫芦案成糊涂案，</p>
+<p>  父母官成糊涂官，</p>
+<p>  糊涂官就掉个头。</p>
+<p>  刑部尚书言，</p>
+<p>  说的到轻松，</p>
+<p>  浊比清，</p>
+<p>  浊总混入清，</p>
+<p>  清难混入浊，</p>
+<p>  可却浊染清时快，</p>
+<p>  清染浊时很是慢，</p>
+<p>  这点道理你不知？</p>
+<p>  每少一点清，</p>
+<p>  浊便更好染，</p>
+<p>  每少一点浊，</p>
+<p>  浊染清时还是快。</p>
+<p>  我言道，</p>
+<p>  我等有何罪，</p>
+<p>  尚书去查吧，</p>
+<p>  如若真有罪，</p>
+<p>  吾…跳黄河中。</p>
+<p>  今为生民求平安，</p>
+<p>  身后恶名遗万年，</p>
+<p>  尔等笔下听上书，</p>
+<p>  清白自有苍天看。</p>
+<p>  言必后离去。</p>
+<p>  刑部尚书听，</p>
+<p>  站在中堂看他离，</p>
+<p>  身如死人不会动。</p>
+<hr>
+<p>来晨朝堂上：</p>
+<p>  我头戴乌纱帽，身穿守丧服。皇帝见后问：“刑部尚书有何事？大殿之上穿丧服？家中若是有离人，可以不来朝。”</p>
+<p>  我听后跪着说：“皇上，葫芦案一事臣已查明，县令斩皇亲，合情合理，天子犯法与庶民同罪，更何况只是皇亲呢？”</p>
+<p>  内阁首辅见皇上脸色不好便说道：“臣以为，天子犯法与庶民同罪，但这皇亲总还是皇上的家人，尽然是家人，那此案就是皇上的家事，自然不应由刑部重审，应由皇上您亲自审理查办。”</p>
+<p>  我促说道：“皇上，臣认为首辅之言不妥，虽此案为皇上家事，可此案本已结案，如今是翻出再审，那被审之人就不只皇上家属，还有那审葫芦案的官也成了被审之人，那此案就不只是皇上的家事了。”</p>
+<p>  皇上不紧不慢的说：“尔有何高见？”</p>
+<p>  ：“皇上，臣以为，葫芦案是皇上的家事，由皇上审是无错，可审葫芦案之官，不是皇上的家事，不如两案分开审。葫芦案皇上您审，葫芦案之官案交由刑部审。”</p>
+<p>  内阁首辅说：“臣以为刑部尚书之言不妥，如此大案，怎能由刑部审，应交由三部司下属法刑院审理才为妥当，毕竟民间有老话，六部一条心，而若交由三司部，一是可堵住说内阁属下的六部昏暗之言，二是可堵住说审查不公之言，毕竟世人皆知，三司部与我内阁不合，可三司部的清廉名声可是京城皆知，虽不及我内阁，可也高于前朝。”</p>
+<p>  ：“历来都是刑部审地方官之案，怎可说变就变？”</p>
+<p>  内阁首辅说：“虽然法刑司审理，没有先例可寻，可吾皇贵为明君圣主，历来明君圣主皆有自创先例之事，吾皇怎不可？”</p>
+<p>  ：“就算是要自创先例，也没有如此仓促决定的自创先例啊。皇上您看臣今穿丧服来，就是为了说葫芦案并不需重审啊，事实证据都摆在那，分明就是那女子葫芦顺着河水丢了后去找，却被您那皇亲找见，您那皇亲见那女子长得幽美，便色心起，对那女子动了手。此事证据皆在，人证有那女子的小郎和当时路过的路人，物证有那女子和那皇亲结束后做出的东西，这还不明显吗？那皇亲对那女子做出如此恶毒之事，不仅毁了她人名声，还对她小郎不敬，此恶人，臣以为，判斩头那都算小了！”</p>
+<p>  皇上听后说：“既然如此，葫芦案还是全全交由刑部审理，一定要还皇家一清白。”</p>
+<p>  ：“谢皇上，臣听指。”</p>
+<hr>
+<p>  散朝后，</p>
+<p>  回至刑部上，</p>
+<p>  至那刑部大牢中，</p>
+<p>  再见那县令，</p>
+<p>  摘下官帽正言道，</p>
+<p>  今为生民求平安，</p>
+<p>  清白自有苍天看，</p>
+<p>  清白也有忠臣看。</p>
+<p>  县令求言道，</p>
+<p>  多谢刑部大人助，</p>
+<p>  子女许久未能见，</p>
+<p>  刑部大人查案途，</p>
+<p>  如若见子女，</p>
+<p>  报声平安信。</p>
+<p>  刑部尚书言，</p>
+<p>  兹次去南县，</p>
+<p>  此事顶会帮，</p>
+<p>  县令莫担忧。</p>
+<hr>
+<p>  带兵驾马离京城，</p>
+<p>  过了几十日，</p>
+<p>  到了那南县，</p>
+<p>  高坐县令椅，</p>
+<p>  直敲惊堂木，</p>
+<p>  官兵押上女子来，</p>
+<p>  刑部尚书言，</p>
+<p>  你可知晓罪？</p>
+<p>  女子问，</p>
+<p>  我等有何罪？</p>
+<p>  事实证据摆眼前，</p>
+<p>  人头落地还要审，</p>
+<p>  京朝果真没好人。</p>
+<p>  刑部尚书言，</p>
+<p>  尔还没有罪？</p>
+<p>  抹黑皇家不是罪？</p>
+<p>  男子怎会是皇亲？</p>
+<p>  如今本官一二审，</p>
+<p>  就见一审端倪多，</p>
+<p>  与你非礼人，</p>
+<p>  怎会是皇亲？</p>
+<p>  定是你编造，</p>
+<p>  如若是不信，</p>
+<p>  请看几条证。</p>
+<p>  一证是人证，</p>
+<p>  速速押上来。</p>
+<p>  几名官兵押一仆，</p>
+<p>  那仆言，</p>
+<p>  那时日，</p>
+<p>  我家公子在家中，</p>
+<p>  未出家门过一步。</p>
+<p>  女子听闻急而言，</p>
+<p>  尔当时非这样说，</p>
+<p>  师爷笔录是证据。</p>
+<p>  刑部尚书听后言，</p>
+<p>  速速拿出那笔录。</p>
+<p>  师爷听闻拿笔录，</p>
+<p>  笔录上记是，</p>
+<p>  我家公子在家中，</p>
+<p>  未出家门过一步。</p>
+<p>  女子听闻惊吓言，</p>
+<p>  当时不是这样的，</p>
+<p>  怎么笔录都变了？</p>
+<p>  刑部尚书言，</p>
+<p>  莫要再欺人，</p>
+<p>  真是皇亲又如何？</p>
+<p>  真是平民又如何？</p>
+<p>  都是被非礼，</p>
+<p>  还有如何差？</p>
+<p>  我等警告你，</p>
+<p>  莫要再想黑皇家，</p>
+<p>  迟早认罪可免罪。</p>
+<p>  女子听后明而言，</p>
+<p>  一审时，</p>
+<p>  我等实在是糊涂，</p>
+<p>  激动之下乱说话，</p>
+<p>  实在说错话，</p>
+<p>  尔等罪孽大。</p>
+<p>  我听到后言，</p>
+<p>  望你认罪早，</p>
+<p>  坦白从宽好榜样，</p>
+<p>  此罪便免了，</p>
+<p>  已经可退堂，</p>
+<p>  还有什么言？</p>
+<p>  女子听而便莫言。</p>
+<p>  刑部尚书言，</p>
+<p>  既然已如此，</p>
+<p>  退堂了。</p>
+<hr>
+<p>  后至县令夫人处，</p>
+<p>  妇人见后言，</p>
+<p>  尔伊奚人焉？</p>
+<p>  刑部尚书言，</p>
+<p>  尔郎托我来，</p>
+<p>  给汝报个平安言。</p>
+<p>  帑问而言道，</p>
+<p>  实在难能谢，</p>
+<p>  冒昧问一句，</p>
+<p>  多谢尔照吾丈人。</p>
+<p>  刑部尚书言，</p>
+<p>  我与他，</p>
+<p>  一是多年好同僚，</p>
+<p>  二是多年好二季，</p>
+<p>  其还嘱托道，</p>
+<p>  这点银两拿去使。</p>
+<p>  妇人听而谢过道。</p>
+<hr>
+<p>  回至京城中，</p>
+<p>  再判那县令，</p>
+<p>  误判罪一等，</p>
+<p>  免去一年俸。</p>
+<hr>
+<p>  后至朝堂中，</p>
+<p>  与那君王言，</p>
+<p>  兹案于皇定无关，</p>
+<p>  怕是中壸看错了，</p>
+<p>  亲人都可看眼拙，</p>
+<p>  真是好笑事。</p>
+<p>  圣上听而言，</p>
+<p>  既然案已截，</p>
+<p>  只是小民案，</p>
+<p>  果真是个糊涂案。</p>
+<hr>
+<p>  至那刑部大牢上，</p>
+<p>  放出那县令，</p>
+<p>  与那县令言，</p>
+<p>  往后不可再如此，</p>
+<p>  如今我命都快无。</p>
+<p>  县令言，</p>
+<p>  永为生民求平安，</p>
+<p>  头掉也不惧。</p>
+<hr>
+<p>  后宫中，</p>
+<p>  中壸看案情，</p>
+<p>  恨怒心中起，</p>
+<p>  命了几死士，</p>
+<p>  前去把他推下江。</p>
+<hr>
+<p>  县令出京城，</p>
+<p>  刚过一小江，</p>
+<p>  被那路人推下江，</p>
+<p>  路人是路人？</p>
+<p>  谁都不知晓。</p>
+<hr>
+<p>  魂飘那江底，</p>
+<p>  河水抱我身，</p>
+<p>  水侵我身心，</p>
+<p>  魂被抓回身，</p>
+<p>  成了一水妖，</p>
+<p>  牛头马面至，</p>
+<p>  看我是妖身，</p>
+<p>  可却有人魂，</p>
+<p>  直甩铁链绑，</p>
+<p>  几摊江水至地府，</p>
+<p>  牛头马面见，</p>
+<p>  再至江水边，</p>
+<p>  直绑一江水，</p>
+<p>  我身我魂至地府。</p>
+<hr>
+<p>  县令亡事传京朝，</p>
+<p>  刑部尚书听闻言，</p>
+<p>  究竟是何人？</p>
+<p>  竟敢做兹事，</p>
+<p>  伤天害理啊。</p>
+<p>  刑部尚书至朝堂，</p>
+<p>  愤言道，</p>
+<p>  南县县令死去事，</p>
+<p>  必定要查办，</p>
+<p>  查出个水落石出，</p>
+<p>  不然怎交代？</p>
+<p>  皇上听而言，</p>
+<p>  糊涂官，</p>
+<p>  死了就死了，</p>
+<p>  再换一官也是行。</p>
+<p>  刑部尚书言，</p>
+<p>  那…</p>
+<p>  臣…</p>
+<p>  先行…</p>
+<p>  告退了…</p>
+<hr>
+<p>  站在刑部上，</p>
+<p>  抚贴刑部地。</p>
+<p>  面露哭诉样。</p>
+<p>  ：“妈，我以后要当大官，百姓伸冤。”</p>
+<p>  哈…</p>
+<p>  哈…哈…哈…</p>
+<p>  哈哈哈哈哈哈哈…</p>
+<hr>
+<p>南县：</p>
+<p>  ：“妈，阿爸怎么还没回来？”那县令的孩子问。</p>
+<p>  ：“乖，快回来了，大概还要等几十日吧。”那县令的妻子说。</p>
+<hr>
+<p>  见地府，</p>
+<p>  看那鬼门关，</p>
+<p>  实在不想入，</p>
+<p>  我一妖身怕什么？</p>
+<p>  为国为民几十年，</p>
+<p>  最后落得江中亡。</p>
+<hr>
+<p>  湿风吹，</p>
+<p>  雨蒙蒙，</p>
+<p>  世上有青山？</p>
+<p>  路长长，</p>
+<p>  不见路，</p>
+<p>  灯笼不照路。</p>
+<p>  门门关，</p>
+<p>  灯灯熄，</p>
+<p>  伸手不见五指处。</p>
+<p>  蹲下去，</p>
+<p>  手抱腿，</p>
+<p>  头埋两腿中，</p>
+<p>  雨蒙蒙，</p>
+<p>  雨渐狂，</p>
+<p>  捶打我身上。</p>
+<p>  看四周，</p>
+<p>  看不见，</p>
+<p>  看不见…</p>
+<p>  看…看…看…</p>
+<p>  看…</p>
+<p>  什么？</p>
+<hr>
+<p>  回到那皇亲，</p>
+<p>  他在凡间已是民，</p>
+<p>  他在阴间已是鬼，</p>
+<p>  上次直跳亭中井，</p>
+<p>  魂竟活下来，</p>
+<p>  吸了那井水，</p>
+<p>  成了一鸿鬼，</p>
+<p>  学习先辈出阴间？</p>
+<p>  殣鬼死的多惨啊，</p>
+<p>  怎么会再学？</p>
+<hr>
+<p>  至鬼衙，</p>
+<p>  聘差事，</p>
+<p>  得个打水活。</p>
+<p>  去那阴山泉水湖。</p>
+<p>  看那泉水湖，</p>
+<p>  如同人间的青天。</p>
+<hr>
+<p>  扛啊扛，</p>
+<p>  一桶一桶扛，</p>
+<p>  扛了一个月，</p>
+<p>  拿到几工钱，</p>
+<p>  我问道，</p>
+<p>  为何如此少？</p>
+<p>  他言道，</p>
+<p>  打水能有几文钱？</p>
+<p>  我言道，</p>
+<p>  也是苦力活的啊。</p>
+<p>  他言道，</p>
+<p>  上面就发这一点，</p>
+<p>  剩下的钱今后结。</p>
+<hr>
+<p>  今日钱，</p>
+<p>  今后结，</p>
+<p>  今后又今后，</p>
+<p>  真是够好笑，</p>
+<p>  笑话笑话啊。</p>
+<hr>
+<p>  那人看我离，</p>
+<p>  心中言，</p>
+<p>  一层接一层，</p>
+<p>  还有几文钱？</p>
+<hr>
+<p>  我拿那点钱，</p>
+<p>  到了一茶馆，</p>
+<p>  走进那茶馆，</p>
+<p>  问道那老板，</p>
+<p>  您这吃食几文钱？</p>
+<p>  茶馆老板言，</p>
+<p>  您就别来这，</p>
+<p>  看你这饿样，</p>
+<p>  别来此处花，</p>
+<p>  我这吃食不充饥，</p>
+<p>  穷人不骗穷人钱。</p>
+<p>  我言道，</p>
+<p>  没事没事的，</p>
+<p>  我虽饿，</p>
+<p>  还是要来这，</p>
+<p>  老板您这来人多，</p>
+<p>  贵族子弟喜爱来，</p>
+<p>  茶水最贵是何茶？</p>
+<p>  茶馆老板言，</p>
+<p>  没有最贵茶，</p>
+<p>  只有好喝茶，</p>
+<p>  这茶卖那有钱人，</p>
+<p>  这茶卖那没钱人，</p>
+<p>  其实都一样，</p>
+<p>  没人尝得出。</p>
+<p>  我言道，</p>
+<p>  怎会没人尝得出？</p>
+<p>  茶馆老板言，</p>
+<p>  阴间就三茶，</p>
+<p>  一是尘寰茶，</p>
+<p>  二是阴绿茶，</p>
+<p>  三是阴红茶，</p>
+<p>  至于其它茶，</p>
+<p>  也是以上三种茶。</p>
+<p>  我言道，</p>
+<p>  老板如此言，</p>
+<p>  不怕无生意？</p>
+<p>  茶馆老板言，</p>
+<p>  看你样，</p>
+<p>  怕是一穷人，</p>
+<p>  跟你说说又何妨？</p>
+<p>  我言道，</p>
+<p>  不怕我告其他人？</p>
+<p>  茶馆老板言，</p>
+<p>  果真什么都会信。</p>
+<p>  我未言，</p>
+<p>  摆摆手，</p>
+<p>  笑着往里走。</p>
+<p>  找到一位置，</p>
+<p>  先喝一口茶，</p>
+<p>  拿出扇一坐，</p>
+<p>  再拿一本书，</p>
+<p>  边扇风边看，</p>
+<p>  不管周边人，</p>
+<p>  不管茶馆台上人，</p>
+<p>  边看边言道，</p>
+<blockquote>
+<p>  春夏间。遍郊原桃杏繁。用尽丹青图画难。道童将驴韝上鞍。忍不住（只）恁般顽。（将一个）酒葫芦杨柳上拴。【北曲|黄钟宫|贺圣朝|作者：【元】无名氏】</p>
+</blockquote>
+<hr>
+<p>  引起他人注，</p>
+<p>  他人来到我位旁，</p>
+<p>  笑言道，</p>
+<p>  人兄真是文化高，</p>
+<p>  为何在这小茶馆？</p>
+<p>  我言道，</p>
+<p>  无官要，</p>
+<p>  只好寄生这茶馆，</p>
+<p>  看点书文品点茶，</p>
+<p>  鬼世人世都一样。</p>
+<p>  他人言，</p>
+<p>  果然高人在凡间，</p>
+<p>  高人可否助下吾，</p>
+<p>  吾是一位小官员，</p>
+<p>  很需一参谋。</p>
+<p>  我听他人言，</p>
+<p>  并未再言语，</p>
+<p>  只是喝口茶。</p>
+<p>  那人见后言，</p>
+<p>  跟我好处多，</p>
+<p>  我虽是小官，</p>
+<p>  但也金银足。</p>
+<p>  我喝一茶后笑言，</p>
+<p>  不管大小官，</p>
+<p>  一律不帮忙，</p>
+<p>  要算风水倒可帮。</p>
+<p>  那人听后笑言道，</p>
+<p>  好好好，</p>
+<p>  真是好，</p>
+<p>  我家坟冢所在地，</p>
+<p>  有请大师前往那。</p>
+<p>  我言道，</p>
+<p>  你我虽不熟，</p>
+<p>  遇上也是老天赐，</p>
+<p>  那就前去算一卦。</p>
+<hr>
+<p>  与人出茶馆，</p>
+<p>  再遇茶老板，</p>
+<p>  与那老板小声言，</p>
+<p>  你这果真好去处，</p>
+<p>  真成了。</p>
+<hr>
+<p>  湿风吹，</p>
+<p>  雨蒙蒙，</p>
+<p>  青山被雨淋。</p>
+<p>  鸟绕山，</p>
+<p>  泥路消，</p>
+<p>  水滴飞至天。</p>
+<hr>
+<p>  一步步，</p>
+<p>  气喘喘，</p>
+<p>  过了阴山墓园子。</p>
+<p>  踩阴花，</p>
+<p>  劈阴草，</p>
+<p>  小道满是草。</p>
+<hr>
+<p>  砍野草，</p>
+<p>  整坟冢，</p>
+<p>  漫天洒纸钱。</p>
+<p>  拿罗盘，</p>
+<p>  四处看，</p>
+<p>  真是福气墓。</p>
+<hr>
+<p>  再看那县令，</p>
+<p>  一殿秦广王，</p>
+<p>  看我满妖气，</p>
+<p>  不管黑白给二殿。</p>
+<p>  二殿楚江王，</p>
+<p>  看我满妖气，</p>
+<p>  又看生前当过官，</p>
+<p>  不管我等如何辩，</p>
+<p>  速速放入那，</p>
+<p>  剥衣亭寒冰地狱，</p>
+<p>  又受十六地狱罪。</p>
+<p>  我等受罚完，</p>
+<p>  满身都是伤，</p>
+<p>  苦难多啊多，</p>
+<p>  对这世间无愿景。</p>
+<hr>
+<p>  刚出地狱到奈何，</p>
+<p>  孟婆叫喝汤，</p>
+<p>  我偏是不喝，</p>
+<p>  我已是妖身，</p>
+<p>  十殿阎王我怕了，</p>
+<p>  小小孟婆奈我何？</p>
+<hr>
+<p>  孟婆言，</p>
+<p>  不喝孟婆汤，</p>
+<p>  难过奈何桥。</p>
+<p>  我化作清水，</p>
+<p>  直过奈何桥，</p>
+<p>  孟婆丢汤拦，</p>
+<p>  我吸那汤水，</p>
+<p>  水妖水变浊，</p>
+<p>  水妖成鸿妖。</p>
+<hr>
+<p>  牛头马面想拦我，</p>
+<p>  摆出一兵阵，</p>
+<p>  千万阴气出，</p>
+<p>  阴气化剑刺，</p>
+<p>  往我头上打，</p>
+<p>  只好张开嘴，</p>
+<p>  水淹这地府，</p>
+<p>  吞这当我鬼</p>
+<p>  数千牛头马面亡。</p>
+<hr>
+<p>  尘寰间：</p>
+<p>  妇人看着手中信，双腿软塌，手摸黄土，黄土色变深，儿女见后跑来问：“阿娘，怎么了？”妇人未曾言，她抱紧了儿女，那儿女的肩膀也是湿了，轻声的说：“乖…”可刚说一个字，她似乎是撑不住了，闭上了言，好似趴在那儿女肩中，是长眠了吗？</p>
+<p>  ：“娘！你怎么了？”儿女齐声边扶边问道。惜回只风声。</p>
+<p>  男孩急着跑去找郎中，女孩守着她娘亲，摸着脸上水。</p>
+<div class="note danger flat"><p>暂收</p>
+</div>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="iconfont icon-user-circle"></i>文章作者: </span><span class="post-copyright-info"><a href="https://yesandnoandperhaps.cn">李岚霏</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="iconfont icon-share-square"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yesandnoandperhaps.cn/posts/ab37c9a5.html">https://yesandnoandperhaps.cn/posts/ab37c9a5.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="iconfont icon-exclamation-circle"></i>版权声明: </span><span class="post-copyright-info">转载请声明出处</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%96%87%E5%AD%A6/">文学</a><a class="post-meta__tags" href="/tags/%E5%8F%99%E4%BA%8B/">叙事</a></div><div class="post-share"><div class="social-share" data-image="/img/app_ic-playstore.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/posts/55315d91.html" title="鸳怨误"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">鸳怨误</div></div><div class="info-2"><div class="info-item-1">鸳鸯各自飞</div></div></div></a><a class="pagination-related" href="/posts/2d595325.html" title="地府体系介绍"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">地府体系介绍</div></div><div class="info-2"><div class="info-item-1">地府体系介绍</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/bbfef51a.html" title="荒乱-第一章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-25</div><div class="info-item-2">荒乱-第一章</div></div><div class="info-2"><div class="info-item-1">民国五年，清政府刚灭亡几年，袁世凯刚死一个月，南方地区。</div></div></div></a><a class="pagination-related" href="/posts/9771472f.html" title="荒乱-第十一章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十一章</div></div><div class="info-2"><div class="info-item-1">万灰脸等人：（民国五年七月九日中午）</div></div></div></a><a class="pagination-related" href="/posts/a767abf7.html" title="荒乱-第十二章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十二章</div></div><div class="info-2"><div class="info-item-1">李风岚说：“自然厉害，带哥哥进去吧。”</div></div></div></a><a class="pagination-related" href="/posts/a1df762c.html" title="荒乱-第十章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十章</div></div><div class="info-2"><div class="info-item-1">万灰脸等人：（民国五年七月九日）</div></div></div></a><a class="pagination-related" href="/posts/5d5411c0.html" title="荒乱-第十四章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十四章</div></div><div class="info-2"><div class="info-item-1">万灰脸等人：（民国五年七月十日早）</div></div></div></a><a class="pagination-related" href="/posts/32cad487.html" title="荒乱-第十五章"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-26</div><div class="info-item-2">荒乱-第十五章</div></div><div class="info-2"><div class="info-item-1">万灰脸接着话茬喊道：“是，没变。”</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/app_ic-playstore.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">yesandnoandperhaps</div><div class="author-info-description">一个文学网站，收集各种今人所写文章，欢迎向我们投稿！</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">207</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">15</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">49</div></a></div><a id="card-info-btn" href="/submission/"><i class="iconfont icon-edit"></i><span>投稿</span></a></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/28c184f4.html" title="粉嫩色">粉嫩色</a><time datetime="2025-01-19T04:26:39.031Z" title="发表于 2025-01-19 12:26:39">2025-01-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/dcd6a765.html" title="亲昵地靠近着你">亲昵地靠近着你</a><time datetime="2025-01-10T04:28:17.837Z" title="发表于 2025-01-10 12:28:17">2025-01-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/ebda9c43.html" title="夜间（其四）">夜间（其四）</a><time datetime="2025-01-05T06:53:09.334Z" title="发表于 2025-01-05 14:53:09">2025-01-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/5cf78526.html" title="夜间（其三）">夜间（其三）</a><time datetime="2025-01-05T06:51:02.049Z" title="发表于 2025-01-05 14:51:02">2025-01-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/11e92674.html" title="夜间（其二）">夜间（其二）</a><time datetime="2025-01-05T06:50:09.338Z" title="发表于 2025-01-05 14:50:09">2025-01-05</time></div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(45deg, #5F9EA0, #4682B4, #B0C4DE);"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By yesandnoandperhaps</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">随随便便，吃饭重要</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="iconfont icon-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="iconfont icon-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="iconfont icon-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="iconfont icon-cog"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="iconfont icon-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="iconfont icon-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
+  const option = null
+
+  const commentCount = n => {
+    const isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+    if (isCommentCount) {
+      isCommentCount.textContent= n
+    }
+  }
+
+  const initGitalk = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyGitalk = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    const gitalk = new Gitalk({
+      clientID: 'Ov23lihL8rs6IRv6eu2M',
+      clientSecret: '82f5099f7b8f3417a12e29146aec687270b8ce20',
+      repo: 'talk',
+      owner: 'yesandnoandperhaps',
+      admin: ['yesandnoandperhaps'],
+      updateCountCallback: commentCount,
+      ...option,
+      id: isShuoshuo ? path : (option && option.id) || '9f71310bcef0295ceb0c44e499d90341'
+    })
+
+    gitalk.render('gitalk-container')
+  }
+
+  const loadGitalk = async(el, path) => {
+    if (typeof Gitalk === 'function') initGitalk(el, path)
+    else {
+      await btf.getCSS('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css')
+      await btf.getScript('https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js')
+      initGitalk(el, path)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Gitalk' === 'Gitalk'
+      ? window.shuoshuoComment = { loadComment: loadGitalk }
+      : window.loadOtherComment = loadGitalk
+    return
+  }
+
+  if ('Gitalk' === 'Gitalk' || !true) {
+    if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+    else loadGitalk()
+  } else {
+    window.loadOtherComment = loadGitalk
+  }
+})()</script></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
