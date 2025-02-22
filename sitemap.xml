@@ -2484,14 +2484,14 @@
   </url>
   
   <url>
-    <loc>https://yesandnoandperhaps.cn/categories/%E4%BD%9C%E8%80%85/%E8%BE%9E%E6%9A%AE/</loc>
+    <loc>https://yesandnoandperhaps.cn/categories/%E4%BD%9C%E8%80%85/%E6%9F%B3%E5%90%9B/</loc>
     <lastmod>2025-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://yesandnoandperhaps.cn/categories/%E4%BD%9C%E8%80%85/%E6%9F%B3%E5%90%9B/</loc>
+    <loc>https://yesandnoandperhaps.cn/categories/%E4%BD%9C%E8%80%85/%E8%BE%9E%E6%9A%AE/</loc>
     <lastmod>2025-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2512,6 +2512,13 @@
   </url>
   
   <url>
+    <loc>https://yesandnoandperhaps.cn/categories/%E6%96%87%E5%AD%A6/%E9%9B%86%E9%80%89/</loc>
+    <lastmod>2025-02-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://yesandnoandperhaps.cn/categories/%E6%96%87%E5%AD%A6/%E8%AE%A8%E8%AE%BA/</loc>
     <lastmod>2025-02-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -2520,6 +2527,13 @@
   
   <url>
     <loc>https://yesandnoandperhaps.cn/categories/%E6%96%87%E5%AD%A6/%E8%AF%97%E8%AF%8D%E6%9B%B2%E8%81%94/%E7%A7%8B%E5%85%B4%E5%85%AB%E9%A6%96/</loc>
+    <lastmod>2025-02-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yesandnoandperhaps.cn/categories/%E4%BD%9C%E8%80%85/%E7%89%A7%E5%AF%B0/</loc>
     <lastmod>2025-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2541,20 +2555,6 @@
   
   <url>
     <loc>https://yesandnoandperhaps.cn/categories/%E6%96%87%E5%AD%A6/%E7%A5%85%E4%BA%8B%E4%B9%A6%E8%AE%B0/%E5%B0%8F%E6%95%85%E4%BA%8B/</loc>
-    <lastmod>2025-02-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yesandnoandperhaps.cn/categories/%E6%96%87%E5%AD%A6/%E9%9B%86%E9%80%89/</loc>
-    <lastmod>2025-02-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yesandnoandperhaps.cn/categories/%E4%BD%9C%E8%80%85/%E7%89%A7%E5%AF%B0/</loc>
     <lastmod>2025-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -2596,6 +2596,13 @@
   </url>
   
   <url>
+    <loc>https://yesandnoandperhaps.cn/categories/%E6%96%87%E5%AD%A6/%E8%AF%97%E8%AF%8D%E6%9B%B2%E8%81%94/%E8%AF%8D/%E8%87%AA%E5%BA%A6%E6%9B%B2/%E5%B7%A5%E5%B0%BA%E8%B0%B1/</loc>
+    <lastmod>2025-02-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://yesandnoandperhaps.cn/categories/%E6%96%87%E5%AD%A6/%E8%AF%97%E8%AF%8D%E6%9B%B2%E8%81%94/%E8%AF%8D/%E8%87%AA%E5%BA%A6%E6%9B%B2/%E6%A0%BC%E5%BE%8B/</loc>
     <lastmod>2025-02-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -2604,13 +2611,6 @@
   
   <url>
     <loc>https://yesandnoandperhaps.cn/categories/%E6%96%87%E5%AD%A6/%E8%AF%97%E8%AF%8D%E6%9B%B2%E8%81%94/%E8%AF%8D/%E8%87%AA%E5%BA%A6%E6%9B%B2/%E5%AE%9A%E6%A0%BC/</loc>
-    <lastmod>2025-02-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yesandnoandperhaps.cn/categories/%E6%96%87%E5%AD%A6/%E8%AF%97%E8%AF%8D%E6%9B%B2%E8%81%94/%E8%AF%8D/%E8%87%AA%E5%BA%A6%E6%9B%B2/%E5%B7%A5%E5%B0%BA%E8%B0%B1/</loc>
     <lastmod>2025-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
