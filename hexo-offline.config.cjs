@@ -26,7 +26,7 @@ module.exports = {
           cacheName: 'audio-cache',
           expiration: {
             maxEntries: 50, // 最多缓存 50 首音乐
-            maxAgeSeconds: 60 * 60 * 24 * 180 // 180 天过期
+            maxAgeSeconds: 60 * 60 * 24 * 120 // 120 天过期
           },
           // 添加缓存插件确保大文件完整存储
           plugins: [
