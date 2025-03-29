@@ -5,7 +5,17 @@ module.exports = {
     maximumFileSizeToCacheInBytes: 209715200, // 10MB
     skipWaiting: true,
     clientsClaim: true,
+    cleanupOutdatedCaches: true,
     runtimeCaching: [
+      {
+        urlPattern: ({ request }) => request.destination === 'document',
+        handler: 'NetworkFirst',
+        options: {
+          cacheName: 'html-cache',
+          networkTimeoutSeconds: 3,
+          expiration: { maxEntries: 50 }
+        }
+      },
       // 缓存静态资源（如你的 CSS、JS）
       {
         urlPattern: ({ request }) => request.destination === 'script' || request.destination === 'style',
