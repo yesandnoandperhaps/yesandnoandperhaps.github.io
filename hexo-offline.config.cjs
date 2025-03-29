@@ -13,7 +13,28 @@ module.exports = {
         options: {
           cacheName: 'html-cache',
           networkTimeoutSeconds: 3,
-          expiration: { maxEntries: 50 }
+          expiration: { maxEntries: 1000 }
+        }
+      },
+
+      {
+        urlPattern: ({ request }) => 
+          request.destination === 'audio' || // 通过 MIME 类型匹配
+          /\.(mp3|wav|ogg)$/i.test(request.url), // 通过文件扩展名匹配
+        handler: 'CacheFirst',
+        options: {
+          cacheName: 'audio-cache',
+          expiration: {
+            maxEntries: 50, // 最多缓存 50 首音乐
+            maxAgeSeconds: 60 * 60 * 24 * 180 // 180 天过期
+          },
+          // 添加缓存插件确保大文件完整存储
+          plugins: [
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+              statuses: [0, 200] // 兼容 opaque responses
+            }),
+            new workbox.rangeRequests.RangeRequestsPlugin() // 支持音频分段加载
+          ]
         }
       },
       // 缓存静态资源（如你的 CSS、JS）
