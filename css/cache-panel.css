@@ -1,0 +1,54 @@
+#cache-panel {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 280px;
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+#cache-panel .cache-panel-content {
+  padding: 15px;
+}
+#cache-panel .cache-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+#cache-panel .close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: var(--text-color);
+}
+#cache-panel .cache-options {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+#cache-panel .delete-btn {
+  width: 100%;
+  padding: 8px;
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#cache-panel .delete-btn:hover {
+  background-color: var(--btn-hover-bg);
+}
+#cache-panel #cache-status {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: var(--text-color);
+  min-height: 20px;
+}

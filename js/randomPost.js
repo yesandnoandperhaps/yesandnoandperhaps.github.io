@@ -4,7 +4,7 @@ function randomPost() {
         let ls = data.querySelectorAll('url loc');
         while (true) {
             let url = ls[Math.floor(Math.random() * ls.length)].innerHTML;
-            if (location.href == url) continue;
+            if (location.href === url) continue;
             location.href = url;
             btf.snackbarShow("已随机访问一篇文章~")
             return;
