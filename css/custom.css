@@ -1,3 +1,16 @@
+#page-header.post-bg::before {
+  border-radius: 0 0 50px 50px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--mark-bg);
+  content: '';
+}
+
+/* #page-header {
+  background: linear-gradient(45deg, #5F9EA0, #4682B4, #B0C4DE);
+}*/
+
 @media (min-width: 992px) {
   .card-widget.card-info {
     display: none !important;

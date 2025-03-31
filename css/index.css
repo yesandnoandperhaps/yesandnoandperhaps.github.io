@@ -3444,13 +3444,13 @@ figure.highlight pre .javascript .function {
   background-attachment: scroll;
   background-position: bottom;
   background-size: cover;
-}
-#footer:before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--mark-bg);
-  content: '';
+  background-image: none !important;
+  border-radius: 0 0 0 0;
+  -webkit-transition: border-radius 0.3s ease-out;
+  -moz-transition: border-radius 0.3s ease-out;
+  -o-transition: border-radius 0.3s ease-out;
+  -ms-transition: border-radius 0.3s ease-out;
+  transition: border-radius 0.3s ease-out;
 }
 #footer-wrap {
   position: relative;
@@ -3480,22 +3480,22 @@ figure.highlight pre .javascript .function {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 0 0 50px 50px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s;
 }
-#page-header:not(.not-top-img):before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--mark-bg);
-  content: '';
-}
 #page-header.full_page {
   height: 100vh;
   background-attachment: fixed;
+  border-radius: 0 0 0 0;
+  -webkit-transition: border-radius 0.3s ease-out;
+  -moz-transition: border-radius 0.3s ease-out;
+  -o-transition: border-radius 0.3s ease-out;
+  -ms-transition: border-radius 0.3s ease-out;
+  transition: border-radius 0.3s ease-out;
 }
 #page-header.full_page #site-info {
   position: absolute;
@@ -3550,12 +3550,32 @@ figure.highlight pre .javascript .function {
   bottom: 10px;
   width: 100%;
   cursor: pointer;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 #page-header #scroll-down .scroll-down-effects {
   position: relative;
   width: 100%;
+  display: inline-block;
   color: var(--light-grey);
-  font-size: 20px;
+  font-size: 60px;
+}
+#page-header #scroll-down:hover {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+#page-header #scroll-down i.iconfont.icon-angle-down {
+  display: inline-block;
+  font-size: 40px;
+  color: var(--light-grey);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+  line-height: 1.5;
 }
 #page-header.not-home-page {
   height: 400px;
