@@ -6,7 +6,11 @@
   background-color: var(--mark-bg);
   content: '';
 }
-
+@media (max-width: 768px) {
+  #page-header.post-bg::before {
+    border-radius: 0 0 30px 30px;
+  }
+}
 /* #page-header {
   background: linear-gradient(45deg, #5F9EA0, #4682B4, #B0C4DE);
 }*/

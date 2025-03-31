@@ -3489,7 +3489,7 @@ figure.highlight pre .javascript .function {
 }
 @media (max-width: 768px) {
   #page-header {
-    border-radius: 0 0 30% 30%;
+    border-radius: 0 0 30px 30px;
   }
 }
 #page-header.full_page {
