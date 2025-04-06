@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://font.sec.miui.com/font/css?family=Source_Han_Serif:400,600:Source_Han_Serif');
 
 /* 定义 CSS 变量 */
 :root {
-  --font-family: "Noto Serif SC";
+  --font-family: "Source Han Serif";
   --letter-spacing: 0.02em;
   --code-font-size: 100%;
   --font-weight: 500; /* 默认字体粗细 */
