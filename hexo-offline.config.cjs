@@ -12,7 +12,7 @@ module.exports = {
         handler: 'NetworkFirst',
         options: {
           cacheName: 'html-cache',
-          expiration: {maxAgeSeconds: 60 * 60 * 24 * 30}
+          expiration: {maxAgeSeconds: 5 * 24 * 60 * 60}
         }
       },
 
