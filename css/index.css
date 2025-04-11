@@ -3079,6 +3079,28 @@ figure.highlight pre .javascript .function {
 #aside-content .card-announcement .item-headline i {
   color: #f00;
 }
+.avatar-link {
+  display: block;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  -moz-transition: -moz-transform 0.25s ease;
+  -o-transition: -o-transform 0.25s ease;
+  -ms-transition: -ms-transform 0.25s ease;
+  transition: transform 0.25s ease;
+}
+.avatar-link:hover {
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
+}
+.avatar-link:hover .avatar-img {
+  -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
 .avatar-img {
   overflow: hidden;
   margin: 0 auto;
@@ -3097,11 +3119,11 @@ figure.highlight pre .javascript .function {
   object-fit: cover;
 }
 .avatar-img img:hover {
-  -webkit-transform: rotate(360deg);
-  -moz-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
 }
 .site-data {
   display: table;
@@ -3443,6 +3465,7 @@ figure.highlight pre .javascript .function {
   background-color: #2e317c;
   background-attachment: scroll;
   background-position: bottom;
+  background-color: #4682b4 !important;
   background-size: cover;
   background-image: none !important;
   border-radius: 0 0 0 0;

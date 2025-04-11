@@ -1,8 +1,8 @@
-@import url('https://font.sec.miui.com/font/css?family=Source_Han_Serif:400,600:Source_Han_Serif');
+@import url("https://fontsapi.zeoseven.com/48/main/result.css");
 
 /* 定义 CSS 变量 */
 :root {
-  --font-family: "Source Han Serif";
+  --font-family: "Source Han Serif VF";
   --letter-spacing: 0.02em;
   --code-font-size: 100%;
   --font-weight: 500; /* 默认字体粗细 */
