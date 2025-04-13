@@ -12,7 +12,7 @@ module.exports = {
         handler: 'NetworkFirst',
         options: {
           cacheName: 'html-cache',
-          expiration: {maxAgeSeconds: 5 * 24 * 60 * 60}
+          expiration: {maxAgeSeconds: 30 * 24 * 60 * 60} //30天
         }
       },
 
@@ -25,7 +25,7 @@ module.exports = {
           cacheName: 'audio-cache',
           expiration: {
             maxEntries: 50, // 最多缓存 50 首音乐
-            maxAgeSeconds: 60 * 60 * 24 * 120 // 120 天过期
+            maxAgeSeconds: 60 * 60 * 24 * 365 // 365 天过期
           },
           // 添加缓存插件确保大文件完整存储
           plugins: [
@@ -44,7 +44,7 @@ module.exports = {
           cacheName: 'static-resources',
           expiration: {
             maxEntries: 1000,
-            maxAgeSeconds: 60 * 60 * 24 * 365, // 30 天
+            maxAgeSeconds: 60 * 60 * 24 * 365, // 365 天
           }
         }
       },
@@ -56,7 +56,7 @@ module.exports = {
           cacheName: 'image-cache',
           expiration: {
             maxEntries: 1000,
-            maxAgeSeconds: 60 * 60 * 24 * 365, // 7 天
+            maxAgeSeconds: 60 * 60 * 24 * 365, // 365 天
           }
         }
       },
@@ -68,7 +68,7 @@ module.exports = {
           cacheName: 'cdn-cache',
           expiration: {
             maxEntries: 1000,
-            maxAgeSeconds: 60 * 60 * 24 * 365, // 30 天
+            maxAgeSeconds: 60 * 60 * 24 * 365, // 365 天
           }
         }
       },
@@ -81,7 +81,7 @@ module.exports = {
           networkTimeoutSeconds: 10,
           expiration: {
             maxEntries: 100,
-            maxAgeSeconds: 60 * 60 * 24 * 365, // 1 天
+            maxAgeSeconds: 60 * 60 * 24 * 365, // 365 天
           }
         }
       }
