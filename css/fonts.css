@@ -1,8 +1,5 @@
-@import url("https://fontsapi.zeoseven.com/48/main/result.css");
-
 /* 定义 CSS 变量 */
 :root {
-  --font-family: "Source Han Serif VF";
   --letter-spacing: 0.02em;
   --code-font-size: 100%;
   --font-weight: 500; /* 默认字体粗细 */
