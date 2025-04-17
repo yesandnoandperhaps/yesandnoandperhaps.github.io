@@ -1,5 +1,4 @@
 const cacheManager = {
-  // 切换面板显示/隐藏，由已有按钮调用
   show_hide: function() {
     const panel = document.querySelector('.cache-panel');
     if (panel.classList.contains('active')) {
@@ -10,43 +9,64 @@ const cacheManager = {
       panel.classList.add('active');
     }
   },
-  // 根据选中项删除对应缓存
-  delete: function() {
-    const selectedCaches = [];
+  delete() {
+    const selected = [];
     document.querySelectorAll('.cache-options input:checked').forEach(input => {
-      selectedCaches.push(input.getAttribute('data-cache'));
+      selected.push(input.dataset.cache);
     });
-    if (selectedCaches.length === 0) {
+
+    if (!selected.length) {
       btf.snackbarShow('请先选择要清除的缓存!');
       return;
     }
+
     if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+      // 清理日志存储
+      window.__deleteLog = {};
       navigator.serviceWorker.controller.postMessage({
         type: 'CLEAR_SELECTED_CACHE',
-        cachesToClear: selectedCaches
+        cachesToClear: selected
       });
-      btf.snackbarShow('正在清除选中的缓存...');
+      btf.snackbarShow('开始按类型清理缓存，请稍候…');
     } else {
       btf.snackbarShow('Service Worker 未激活或未控制此页面!');
     }
   }
 };
 
-// 注册 Service Worker（确保 service-worker.js 已在 public 目录中生成）
+// 监听 Service Worker 返回的删除结果
+const deleteLog = {};
+navigator.serviceWorker.addEventListener('message', event => {
+  const msg = event.data;
+  if (!msg?.type) return;
+
+  if (msg.type === 'CACHE_DELETE_RESULT') {
+    if (!deleteLog[msg.category]) deleteLog[msg.category] = [];
+    deleteLog[msg.category].push({ url: msg.url, success: msg.success });
+    btf.snackbarShow(
+      `${msg.category}：${msg.url.split('/').pop()} 删除 ${msg.success ? '成功' : '失败'}`
+    );
+  }
+
+  if (msg.type === 'CACHE_DELETE_DONE') {
+    msg.categories.forEach(cat => {
+      const results = deleteLog[cat] || [];
+      const succ = results.filter(r => r.success).length;
+      const fail = results.length - succ;
+      btf.snackbarShow(`类型【${cat}】删除完毕：${succ} 成功，${fail} 失败`);
+    });
+    // 清空
+    Object.keys(deleteLog).forEach(k => deleteLog[k] = []);
+  }
+});
+
+// 注册 Service Worker
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/service-worker.js')
     .then(reg => console.log('Service Worker 注册成功：', reg.scope))
     .catch(err => console.error('Service Worker 注册失败：', err));
 }
 
-// 可选：监听 Service Worker 消息反馈，展示删除成功提示
-if (navigator.serviceWorker) {
-  navigator.serviceWorker.addEventListener('message', event => {
-    if (event.data && event.data.type === 'CACHE_CLEARED') {
-      btf.snackbarShow(`缓存 ${event.data.cacheName} 已清除`);
-    }
-  });
-}
 
 window.addEventListener('scroll', () => {
   if (window.scrollY === 0) {
