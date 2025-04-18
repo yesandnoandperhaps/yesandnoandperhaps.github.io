@@ -455,6 +455,64 @@ window.addEventListener('load', () => {
   <div id="cache-status"></div>
 </div>
 
+<script>
+  ;(function(){
+    const cacheNameMap = {
+      html:  'page-cache',
+      image: 'image-cache',
+      audio: 'audio-cache',
+      static:'static-resources'
+    };
+  
+    window.cacheManager = {
+      async deleteSelected() {
+        const checked = Array.from(document.querySelectorAll(
+          '.cache-options input:checked'
+        ));
+        if (!checked.length) {
+          return btf.snackbarShow('⚠️ 请先选择要清除的缓存!');
+        }
+        const names = checked.map(cb => cacheNameMap[cb.dataset.cache])
+                             .filter(Boolean);
+  
+        const reg = await navigator.serviceWorker.ready;
+        const sw = reg.active || reg.waiting;
+        if (!sw) {
+          return btf.snackbarShow('❌ Service Worker 未就绪');
+        }
+  
+        // 发消息
+        sw.postMessage({
+          type: 'CLEAR_SELECTED_CACHE',
+          cachesToClear: names
+        });
+  
+        btf.snackbarShow(`🔄 请求已发送：${names.join('，')}`);
+      }
+    };
+  
+    document.querySelector('.delete-btn')
+            .addEventListener('click', () => 
+              window.cacheManager.deleteSelected()
+            );
+  
+    // 接收 SW 的反馈
+    const deleteLog = {};
+    navigator.serviceWorker.addEventListener('message', event => {
+      const msg = event.data;
+      if (msg?.type === 'CACHE_DELETE_RESULT') {
+        btf.snackbarShow(
+          `${msg.category}：${msg.url || ''} 删除 ${msg.success ? '成功' : '失败'}`
+        );
+      }
+      if (msg?.type === 'CACHE_DELETE_DONE') {
+        btf.snackbarShow(`✅ 类型【${msg.categories.join('，')}】删除完毕`);
+      }
+    });
+  })();
+</script>
+  
+
 
 <style>
 

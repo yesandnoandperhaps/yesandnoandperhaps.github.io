@@ -1,91 +1,107 @@
 module.exports = {
-    globPatterns: ['**/*.{js,html,css,png,jpg,jpeg,gif,svg,webp,eot,ttf,woff,woff2,mp3}'],
-    globDirectory: 'public',
-    swDest: 'public/service-worker.js',
-    maximumFileSizeToCacheInBytes: 209715200, // 10MB
-    skipWaiting: true,
-    clientsClaim: true,
-    cleanupOutdatedCaches: true,
-    runtimeCaching: [
-      {
-        urlPattern: ({ request }) => request.destination === 'document',
-        handler: 'NetworkFirst',
-        options: {
-          cacheName: 'html-cache',
-          expiration: {maxAgeSeconds: 7 * 24 * 60 * 60} //30天
-        }
-      },
+  // 只预缓存静态资源，不包含 HTML
+  globPatterns: [
+    '**/*.{js,css,png,jpg,jpeg,gif,svg,webp,eot,ttf,woff,woff2,mp3}'
+  ],
+  globDirectory: 'public',
+  swDest: 'public/service-worker.js',
+  maximumFileSizeToCacheInBytes: 209715200, // 200MB
 
-      {
-        urlPattern: ({ request }) => 
-          request.destination === 'audio' || // 通过 MIME 类型匹配
-          /\.(mp3|wav|ogg)$/i.test(request.url), // 通过文件扩展名匹配
-        handler: 'CacheFirst',
-        options: {
-          cacheName: 'audio-cache',
-          expiration: {
-            maxEntries: 50, // 最多缓存 50 首音乐
-            maxAgeSeconds: 60 * 60 * 24 * 365 // 365 天过期
-          },
-          // 添加缓存插件确保大文件完整存储
-          plugins: [
-            new workbox.cacheableResponse.CacheableResponsePlugin({
-              statuses: [0, 200] // 兼容 opaque responses
-            }),
-            new workbox.rangeRequests.RangeRequestsPlugin() // 支持音频分段加载
-          ]
-        }
-      },
-      // 缓存静态资源（如你的 CSS、JS）
-      {
-        urlPattern: ({ request }) => request.destination === 'script' || request.destination === 'style',
-        handler: 'StaleWhileRevalidate',
-        options: {
-          cacheName: 'static-resources',
-          expiration: {
-            maxEntries: 1000,
-            maxAgeSeconds: 60 * 60 * 24 * 365, // 365 天
-          }
-        }
-      },
-      // 缓存图片资源
-      {
-        urlPattern: ({ request }) => request.destination === 'image',
-        handler: 'CacheFirst',
-        options: {
-          cacheName: 'image-cache',
-          expiration: {
-            maxEntries: 1000,
-            maxAgeSeconds: 60 * 60 * 24 * 365, // 365 天
-          }
-        }
-      },
-      // 缓存你的 CDN 资源
-      {
-        urlPattern: /^https:\/\/cdn\.yesandnoandperhaps\.cn\/.*/, 
-        handler: 'CacheFirst',
-        options: {
-          cacheName: 'cdn-cache',
-          expiration: {
-            maxEntries: 1000,
-            maxAgeSeconds: 60 * 60 * 24 * 365, // 365 天
-          }
-        }
-      },
-      // 缓存 API 请求（如果你的站点有 API）
-      {
-        urlPattern: /^https:\/\/yesandnoandperhaps\.cn\/api\/.*/, 
-        handler: 'NetworkFirst',
-        options: {
-          cacheName: 'api-cache',
-          networkTimeoutSeconds: 10,
-          expiration: {
-            maxEntries: 100,
-            maxAgeSeconds: 60 * 60 * 24 * 365, // 365 天
-          }
+  // 新版本立即生效
+  skipWaiting: true,
+  clientsClaim: true,
+
+  // 自动清理过期 precache（静态资源）
+  cleanupOutdatedCaches: true,
+
+  runtimeCaching: [
+    // —— 按需缓存 HTML 页面 —— 
+    {
+      urlPattern: ({ request }) => request.mode === 'navigate',
+      handler: 'NetworkFirst', // 或 'StaleWhileRevalidate'，看你更偏向“更鲜”还是“更快”
+      options: {
+        cacheName: 'page-cache',
+        networkTimeoutSeconds: 10,      // 可选：超时后直接走缓存
+        plugins: [
+          // 仅按天数设置过期，不限数量
+          new workbox.expiration.ExpirationPlugin({
+            maxAgeSeconds: 7 * 24 * 60 * 60, // 缓存保留 7 天
+            purgeOnQuotaError: true         // 配额不足时自动清理旧条目
+          })
+        ]
+      }
+    },
+
+    // —— JS/CSS 脚本 & 样式（预缓存外的运行时更新） —— 
+    {
+      urlPattern: ({ request }) =>
+        request.destination === 'script' ||
+        request.destination === 'style',
+      handler: 'StaleWhileRevalidate',
+      options: {
+        cacheName: 'static-resources',
+        expiration: {
+          maxAgeSeconds: 365 * 24 * 60 * 60,
         }
       }
-    ]
-}
+    },
 
-  
+    // —— 图片资源 —— 
+    {
+      urlPattern: ({ request }) => request.destination === 'image',
+      handler: 'CacheFirst',
+      options: {
+        cacheName: 'image-cache',
+        expiration: {
+          maxAgeSeconds: 365 * 24 * 60 * 60,
+        }
+      }
+    },
+
+    // —— 音频资源 —— 
+    {
+      urlPattern: ({ request }) =>
+        request.destination === 'audio' ||
+        /\.(mp3|wav|ogg)$/i.test(request.url),
+      handler: 'CacheFirst',
+      options: {
+        cacheName: 'audio-cache',
+        expiration: {
+          maxAgeSeconds: 365 * 24 * 60 * 60,
+        },
+        plugins: [
+          new workbox.cacheableResponse.CacheableResponsePlugin({
+            statuses: [0, 200]
+          }),
+          new workbox.rangeRequests.RangeRequestsPlugin()
+        ]
+      }
+    },
+
+    // —— CDN 资源 —— 
+    {
+      urlPattern: /^https:\/\/cdn\.yesandnoandperhaps\.cn\/.*/,
+      handler: 'CacheFirst',
+      options: {
+        cacheName: 'cdn-cache',
+        expiration: {
+          maxAgeSeconds: 365 * 24 * 60 * 60,
+        }
+      }
+    },
+
+    // —— API 请求 —— 
+    {
+      urlPattern: /^https:\/\/yesandnoandperhaps\.cn\/api\/.*/,
+      handler: 'NetworkFirst',
+      options: {
+        cacheName: 'api-cache',
+        networkTimeoutSeconds: 10,
+        expiration: {
+          maxEntries: 100,
+          maxAgeSeconds: 365 * 24 * 60 * 60,
+        }
+      }
+    }
+  ]
+}

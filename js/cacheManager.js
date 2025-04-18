@@ -34,32 +34,6 @@ const cacheManager = {
   }
 };
 
-// 监听 Service Worker 返回的删除结果
-const deleteLog = {};
-navigator.serviceWorker.addEventListener('message', event => {
-  const msg = event.data;
-  if (!msg?.type) return;
-
-  if (msg.type === 'CACHE_DELETE_RESULT') {
-    if (!deleteLog[msg.category]) deleteLog[msg.category] = [];
-    deleteLog[msg.category].push({ url: msg.url, success: msg.success });
-    btf.snackbarShow(
-      `${msg.category}：${msg.url.split('/').pop()} 删除 ${msg.success ? '成功' : '失败'}`
-    );
-  }
-
-  if (msg.type === 'CACHE_DELETE_DONE') {
-    msg.categories.forEach(cat => {
-      const results = deleteLog[cat] || [];
-      const succ = results.filter(r => r.success).length;
-      const fail = results.length - succ;
-      btf.snackbarShow(`类型【${cat}】删除完毕：${succ} 成功，${fail} 失败`);
-    });
-    // 清空
-    Object.keys(deleteLog).forEach(k => deleteLog[k] = []);
-  }
-});
-
 // 注册 Service Worker
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/service-worker.js')
@@ -76,3 +50,4 @@ window.addEventListener('scroll', () => {
     }
   }
 });
+
