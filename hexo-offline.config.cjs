@@ -41,7 +41,7 @@ module.exports = {
       options: {
         cacheName: 'static-resources',
         expiration: {
-          maxAgeSeconds: 365 * 24 * 60 * 60,
+          maxAgeSeconds: 30 * 24 * 60 * 60,
         }
       }
     },
@@ -53,7 +53,7 @@ module.exports = {
       options: {
         cacheName: 'image-cache',
         expiration: {
-          maxAgeSeconds: 365 * 24 * 60 * 60,
+          maxAgeSeconds: 30 * 24 * 60 * 60,
         }
       }
     },
