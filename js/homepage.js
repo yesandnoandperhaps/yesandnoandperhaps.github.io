@@ -1,5 +1,5 @@
-// 通用配置项
-const CARD_SELECTOR = '.recent-post-item, .card-widget';
+// 通用配置项, .card-widget'
+const CARD_SELECTOR = '.recent-post-item';
 const SENSITIVITY = 70;
 const SHADOW_INTENSITY = 20;
 
